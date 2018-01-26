@@ -42,4 +42,4 @@ julia extract_ngsim_demonstrations.jl
 cd imitation
 python imitate.py [options here]
 ```
-See installation log ![logFile]
+See installation ![logFile](installLog_hgail)
