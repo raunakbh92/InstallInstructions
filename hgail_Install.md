@@ -77,6 +77,7 @@ julia
   >>using AutoEnvs
   >>quit()
 ```
+Here is a logfile for the above. Next, we will get the NGSIM data and run a few tests with julia and python to make sure everything is fine
 
 ### download NGSIM data
 ```bash
@@ -117,35 +118,29 @@ python setup.py develop
 pip install julia
 cd tests
 # one of the these tests will fail if you don't have hgail installed
-# if you get a segfault, see below (PyCall cache)
+
 python runtests.py
+  # if you get a segfault, need to delete the PyCall.jl cache file
+
+  cd ~/.julia/lib/v0.6
+  rm PyCall.jl
+  # Check
+  python
+    >>>import julia
+    >>>quit()
+
+# After removing PyCall.jl let's try the test again (all this is assuming you got a seg fault)
+cd ~/ngsim_env/python/tests
+python runtests.py
+  # If you get the error: 
+  # ERROR: test_vectorized_ngsim_env (unittest.loader._FailedTest)
+  # Intel MKL FATAL ERROR: Cannot load libmkl_avx2.so or libmkl_def.so
+
+  conda install nomkl numpy scipy scikit-learn numexpr
+  # Then run the test again and it should be fine
+
 ```
-
-# Troubleshooting
-
-### pyjulia
-
-#### segfault 
-##### reason 1: PyCall cache 
-- this is due to a bug with the PyCall cache file 
-- this file is stored in .julia/lib/<pyjulia-or-something>
-    + it's also stored in .julia/lib/<v0.6-or-something>
-- to fix the bug you have to delete the PyCall cache file called PyCall.ji from both caches, and then in python import julia
-    + don't delete the full cache because then it takes forever to rebuild, just delete PyCall.ji
-
-##### reason 2: julia version mixup
-- on tver for example the default julia is julia v0.5, but you need v0.6
-- so what you have to do is source whatever conda env you're using 
-- then manually export the path to the julia binary to be _first in the path_
-- and then install via pip install julia 
-- and then build
-- you should only have to do this once though
-
-#### iterators uuid messed up
-- no idea what the problem is
-- but if you import Iterators in the juliarc.jl file it fixes it 
-- i.e., add `using Iterators` to the top of `~/juliarc.jl`
-
+Here is a logfile for the above
 
 # Installation instructions for hgail
 ```bash
