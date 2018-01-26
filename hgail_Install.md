@@ -137,6 +137,8 @@ python runtests.py
   # Intel MKL FATAL ERROR: Cannot load libmkl_avx2.so or libmkl_def.so
 
   conda install nomkl numpy scipy scikit-learn numexpr
+  # Found the fix https://stackoverflow.com/questions/36659453/intel-mkl-fatal-error-cannot-load-libmkl-avx2-so-or-libmkl-def-so
+  # Answer by libphy
   # Then run the test again and it should be fine
 
 ```
