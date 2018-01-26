@@ -3,7 +3,7 @@
 - ngsim section adapted from Blake's ngsim install [instructions](https://github.com/wulfebw/ngsim_env/blob/master/docs/install.md) then added to by Raunak on Jan 26
 - Hgail adapted from Derek's install instructions and then added to by Raunak on Jan 25
 
-## python
+# Installation instructions for ngsim_env 
 ```bash
 # install miniconda
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -24,7 +24,7 @@ python setup.py develop
 cd ..
 ```
 
-## julia
+## Install julia
 ```bash
 # install our own version of julia
 wget https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.2-linux-x86_64.tar.gz
@@ -109,7 +109,7 @@ julia runtests.jl
 cd ../../..
 ```
 
-### python
+### run python tests
 ```bash
 # install the python components of the package
 source activate rllab3 # this is probably not necessary, but just in case
