@@ -77,7 +77,7 @@ julia
   >>using AutoEnvs
   >>quit()
 ```
-Here is a logfile for the above. Next, we will get the NGSIM data and run a few tests with julia and python to make sure everything is fine
+Here is a [logfile](logFiles/installLog_ngsim) for the above. Next, we will get the NGSIM data and run a few tests with julia and python to make sure everything is fine
 
 ### download NGSIM data
 ```bash
@@ -140,7 +140,7 @@ python runtests.py
   # Then run the test again and it should be fine
 
 ```
-Here is a logfile for the above
+Here is a [logfile](logFiles/ngsim_test_log) for the above
 
 # Installation instructions for hgail
 ```bash
