@@ -1,0 +1,1903 @@
+raunak@bombay:~$ ssh raunakbh@tver
+raunakbh@tver's password: 
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-109-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+1 package can be updated.
+0 updates are security updates.
+
+
+*** System restart required ***
+Last login: Thu Jan 25 13:20:12 2018 from 171.64.160.60
+raunakbh@tver:~$ 
+raunakbh@tver:~$ ls
+miniconda3  Miniconda3-latest-Linux-x86_64.sh
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ rm Miniconda3-latest-Linux-x86_64.sh 
+raunakbh@tver:~$ source ~/.bashrc
+raunakbh@tver:~$ ls
+miniconda3
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ git clone https://github.com/rll/rllab.git
+Cloning into 'rllab'...
+remote: Counting objects: 1390, done.
+remote: Total 1390 (delta 0), reused 0 (delta 0), pack-reused 1390
+Receiving objects: 100% (1390/1390), 1.51 MiB | 0 bytes/s, done.
+Resolving deltas: 100% (762/762), done.
+Checking connectivity... done.
+raunakbh@tver:~$ cd rllab/
+raunakbh@tver:~/rllab$ conda env create -f environment.yml 
+Fetching package metadata .......................
+Solving package specifications: .
+icu-54.1-0.tar 100% |#####################################################| Time: 0:00:00  60.96 MB/s
+intel-openmp-2 100% |#####################################################| Time: 0:00:00  43.46 MB/s
+libgfortran-3. 100% |#####################################################| Time: 0:00:00  46.08 MB/s
+libgfortran-ng 100% |#####################################################| Time: 0:00:00  50.26 MB/s
+libiconv-1.14- 100% |#####################################################| Time: 0:00:00  58.34 MB/s
+mpich2-1.4.1p1 100% |#####################################################| Time: 0:00:00  65.48 MB/s
+readline-6.2-2 100% |#####################################################| Time: 0:00:00  69.67 MB/s
+sqlite-3.13.0- 100% |#####################################################| Time: 0:00:00  48.66 MB/s
+tk-8.5.18-0.ta 100% |#####################################################| Time: 0:00:00  62.61 MB/s
+expat-2.2.5-he 100% |#####################################################| Time: 0:00:00  55.24 MB/s
+gmp-6.1.2-h6c8 100% |#####################################################| Time: 0:00:00  61.24 MB/s
+jpeg-9b-h024ee 100% |#####################################################| Time: 0:00:00  59.17 MB/s
+libgcc-7.2.0-h 100% |#####################################################| Time: 0:00:00  49.97 MB/s
+libsodium-1.0. 100% |#####################################################| Time: 0:00:00  71.65 MB/s
+libxcb-1.12-hc 100% |#####################################################| Time: 0:00:00  75.54 MB/s
+mkl-2017.0.4-h 100% |#####################################################| Time: 0:00:02  83.44 MB/s
+pcre-8.41-hc27 100% |#####################################################| Time: 0:00:00  59.97 MB/s
+glib-2.53.6-h5 100% |#####################################################| Time: 0:00:00  64.00 MB/s
+hdf5-1.10.1-h9 100% |#####################################################| Time: 0:00:00  66.52 MB/s
+libpng-1.6.34- 100% |#####################################################| Time: 0:00:00  61.85 MB/s
+libtiff-4.0.9- 100% |#####################################################| Time: 0:00:00  71.19 MB/s
+libxml2-2.9.4- 100% |#####################################################| Time: 0:00:00  68.17 MB/s
+pandoc-1.19.2. 100% |#####################################################| Time: 0:00:00  77.25 MB/s
+python-3.5.2-0 100% |#####################################################| Time: 0:00:00  69.83 MB/s
+zeromq-4.2.2-h 100% |#####################################################| Time: 0:00:00  59.55 MB/s
+certifi-2017.1 100% |#####################################################| Time: 0:00:00  68.20 MB/s
+click-6.6-py35 100% |#####################################################| Time: 0:00:00 334.28 kB/s
+dbus-1.12.2-hd 100% |#####################################################| Time: 0:00:00  67.92 MB/s
+decorator-4.2. 100% |#####################################################| Time: 0:00:00  31.55 MB/s
+entrypoints-0. 100% |#####################################################| Time: 0:00:00  25.98 MB/s
+freetype-2.5.5 100% |#####################################################| Time: 0:00:00  81.23 MB/s
+gstreamer-1.12 100% |#####################################################| Time: 0:00:00  78.20 MB/s
+ipython_genuti 100% |#####################################################| Time: 0:00:00  50.25 MB/s
+itsdangerous-0 100% |#####################################################| Time: 0:00:00  41.37 MB/s
+joblib-0.10.3- 100% |#####################################################| Time: 0:00:00 350.25 kB/s
+llvmlite-0.21. 100% |#####################################################| Time: 0:00:00  59.84 MB/s
+markupsafe-1.0 100% |#####################################################| Time: 0:00:00  38.65 MB/s
+mistune-0.8.3- 100% |#####################################################| Time: 0:00:00  40.97 MB/s
+mpi4py-2.0.0-p 100% |#####################################################| Time: 0:00:00  68.47 MB/s
+numpy-1.12.0-p 100% |#####################################################| Time: 0:00:00  73.92 MB/s
+olefile-0.44-p 100% |#####################################################| Time: 0:00:00  53.30 MB/s
+pandocfilters- 100% |#####################################################| Time: 0:00:00  26.94 MB/s
+parso-0.1.1-py 100% |#####################################################| Time: 0:00:00  69.82 MB/s
+path.py-10.5-p 100% |#####################################################| Time: 0:00:00  54.34 MB/s
+pickleshare-0. 100% |#####################################################| Time: 0:00:00  33.07 MB/s
+ptyprocess-0.5 100% |#####################################################| Time: 0:00:00  35.14 MB/s
+pybox2d-2.3.1p 100% |#####################################################| Time: 0:00:01   1.49 MB/s
+pycparser-2.18 100% |#####################################################| Time: 0:00:00  62.93 MB/s
+pyparsing-2.2. 100% |#####################################################| Time: 0:00:00  67.83 MB/s
+pytz-2017.3-py 100% |#####################################################| Time: 0:00:00  76.86 MB/s
+pyzmq-16.0.3-p 100% |#####################################################| Time: 0:00:00  83.05 MB/s
+send2trash-1.4 100% |#####################################################| Time: 0:00:00  41.41 MB/s
+simplegeneric- 100% |#####################################################| Time: 0:00:00  26.75 MB/s
+sip-4.18.1-py3 100% |#####################################################| Time: 0:00:00  80.62 MB/s
+six-1.11.0-py3 100% |#####################################################| Time: 0:00:00  42.88 MB/s
+testpath-0.3.1 100% |#####################################################| Time: 0:00:00  69.95 MB/s
+tornado-4.5.3- 100% |#####################################################| Time: 0:00:00  78.45 MB/s
+wcwidth-0.1.7- 100% |#####################################################| Time: 0:00:00  45.18 MB/s
+webencodings-0 100% |#####################################################| Time: 0:00:00  42.46 MB/s
+werkzeug-0.14. 100% |#####################################################| Time: 0:00:00  84.75 MB/s
+cffi-1.11.4-py 100% |#####################################################| Time: 0:00:00  75.62 MB/s
+cycler-0.10.0- 100% |#####################################################| Time: 0:00:00  41.43 MB/s
+fontconfig-2.1 100% |#####################################################| Time: 0:00:00  86.09 MB/s
+gst-plugins-ba 100% |#####################################################| Time: 0:00:00  58.85 MB/s
+h5py-2.7.1-py3 100% |#####################################################| Time: 0:00:00  74.28 MB/s
+html5lib-1.0.1 100% |#####################################################| Time: 0:00:00  49.74 MB/s
+jedi-0.11.1-py 100% |#####################################################| Time: 0:00:00  55.58 MB/s
+mako-1.0.7-py3 100% |#####################################################| Time: 0:00:00  49.45 MB/s
+numba-0.36.2-n 100% |#####################################################| Time: 0:00:00  62.36 MB/s
+opencv3-3.1.0- 100% |#####################################################| Time: 0:00:04   9.15 MB/s
+pexpect-4.3.1- 100% |#####################################################| Time: 0:00:00  49.01 MB/s
+pillow-4.2.1-p 100% |#####################################################| Time: 0:00:00  74.72 MB/s
+pygame-1.9.2a0 100% |#####################################################| Time: 0:00:00  12.04 MB/s
+python-dateuti 100% |#####################################################| Time: 0:00:00  49.69 MB/s
+scipy-0.19.1-n 100% |#####################################################| Time: 0:00:00  70.19 MB/s
+setuptools-38. 100% |#####################################################| Time: 0:00:00  70.46 MB/s
+terminado-0.8. 100% |#####################################################| Time: 0:00:00  39.68 MB/s
+traitlets-4.3. 100% |#####################################################| Time: 0:00:00  52.23 MB/s
+bleach-2.1.2-p 100% |#####################################################| Time: 0:00:00  22.85 MB/s
+jinja2-2.10-py 100% |#####################################################| Time: 0:00:00  56.61 MB/s
+jsonschema-2.6 100% |#####################################################| Time: 0:00:00  44.82 MB/s
+jupyter_core-4 100% |#####################################################| Time: 0:00:00  45.90 MB/s
+pandas-0.21.1- 100% |#####################################################| Time: 0:00:00  66.47 MB/s
+pygments-2.2.0 100% |#####################################################| Time: 0:00:00  61.15 MB/s
+pytorch-0.1.9- 100% |#####################################################| Time: 0:00:12  20.04 MB/s
+qt-5.6.2-5.tar 100% |#####################################################| Time: 0:00:00  68.46 MB/s
+scikit-learn-0 100% |#####################################################| Time: 0:00:00  75.18 MB/s
+wheel-0.30.0-p 100% |#####################################################| Time: 0:00:00  52.81 MB/s
+flask-0.12.2-p 100% |#####################################################| Time: 0:00:00  62.82 MB/s
+jupyter_client 100% |#####################################################| Time: 0:00:00  77.34 MB/s
+nbformat-4.4.0 100% |#####################################################| Time: 0:00:00  13.81 MB/s
+pip-9.0.1-py35 100% |#####################################################| Time: 0:00:00  72.88 MB/s
+prompt_toolkit 100% |#####################################################| Time: 0:00:00  72.70 MB/s
+pyqt-5.6.0-py3 100% |#####################################################| Time: 0:00:00  77.02 MB/s
+torchvision-0. 100% |#####################################################| Time: 0:00:00  46.02 MB/s
+ipython-6.2.1- 100% |#####################################################| Time: 0:00:00  39.78 MB/s
+matplotlib-2.0 100% |#####################################################| Time: 0:00:00  52.15 MB/s
+nbconvert-5.3. 100% |#####################################################| Time: 0:00:00  62.52 MB/s
+ipykernel-4.8. 100% |#####################################################| Time: 0:00:00  35.71 MB/s
+notebook-5.3.1 100% |#####################################################| Time: 0:00:00  56.11 MB/s
+widgetsnbexten 100% |#####################################################| Time: 0:00:01   1.03 MB/s
+ipywidgets-5.1 100% |#####################################################| Time: 0:00:00  25.20 MB/s
+Ignoring tensorflow-gpu: markers 'sys_platform == "darwin"' don't match your environment
+Collecting git+https://github.com/inksci/mujoco-py-v0.5.7.git
+  Cloning https://github.com/inksci/mujoco-py-v0.5.7.git to /tmp/pip-j_zvm1it-build
+Collecting git+https://github.com/neocxi/prettytensor.git
+  Cloning https://github.com/neocxi/prettytensor.git to /tmp/pip-r3f69079-build
+Requirement already satisfied: Pillow in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Collecting atari-py
+  Downloading atari-py-0.1.1.tar.gz (760kB)
+    100% |████████████████████████████████| 768kB 1.9MB/s 
+Collecting pyprind
+  Downloading PyPrind-2.11.1.tar.gz
+Collecting ipdb
+  Downloading ipdb-0.10.3.tar.gz
+Collecting boto3
+  Downloading boto3-1.5.20-py2.py3-none-any.whl (128kB)
+    100% |████████████████████████████████| 133kB 8.3MB/s 
+Collecting PyOpenGL
+  Downloading PyOpenGL-3.1.0.tar.gz (1.2MB)
+    100% |████████████████████████████████| 1.2MB 724kB/s 
+Collecting nose2
+  Downloading nose2-0.7.3.tar.gz (139kB)
+    100% |████████████████████████████████| 143kB 9.6MB/s 
+Requirement already satisfied: pyzmq in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Collecting tqdm
+  Downloading tqdm-4.19.5-py2.py3-none-any.whl (51kB)
+    100% |████████████████████████████████| 61kB 11.8MB/s 
+Collecting msgpack-python
+  Downloading msgpack-python-0.5.1.tar.gz (138kB)
+    100% |████████████████████████████████| 143kB 6.3MB/s 
+Collecting cached_property
+  Downloading cached_property-1.3.1-py2.py3-none-any.whl
+Collecting line_profiler
+  Downloading line_profiler-2.1.2.tar.gz (83kB)
+    100% |████████████████████████████████| 92kB 8.9MB/s 
+Collecting cloudpickle
+  Downloading cloudpickle-0.5.2-py2.py3-none-any.whl
+Collecting Cython
+  Downloading Cython-0.27.3-cp35-cp35m-manylinux1_x86_64.whl (3.0MB)
+    100% |████████████████████████████████| 3.0MB 369kB/s 
+Collecting redis
+  Downloading redis-2.10.6-py2.py3-none-any.whl (64kB)
+    100% |████████████████████████████████| 71kB 12.4MB/s 
+Collecting keras==1.2.1
+  Downloading Keras-1.2.1.tar.gz (173kB)
+    100% |████████████████████████████████| 174kB 8.5MB/s 
+Collecting Theano from git+https://github.com/Theano/Theano.git@adfe319ce6b781083d8dc3200fb4481b00853791#egg=Theano
+  Cloning https://github.com/Theano/Theano.git (to adfe319ce6b781083d8dc3200fb4481b00853791) to /tmp/pip-build-74w28ezt/Theano
+  Could not find a tag or branch 'adfe319ce6b781083d8dc3200fb4481b00853791', assuming commit.
+Collecting Lasagne from git+https://github.com/neocxi/Lasagne.git@484866cf8b38d878e92d521be445968531646bb8#egg=Lasagne
+  Cloning https://github.com/neocxi/Lasagne.git (to 484866cf8b38d878e92d521be445968531646bb8) to /tmp/pip-build-74w28ezt/Lasagne
+  Could not find a tag or branch '484866cf8b38d878e92d521be445968531646bb8', assuming commit.
+Collecting plotly from git+https://github.com/plotly/plotly.py.git@2594076e29584ede2d09f2aa40a8a195b3f3fc66#egg=plotly
+  Cloning https://github.com/plotly/plotly.py.git (to 2594076e29584ede2d09f2aa40a8a195b3f3fc66) to /tmp/pip-build-74w28ezt/plotly
+  Could not find a tag or branch '2594076e29584ede2d09f2aa40a8a195b3f3fc66', assuming commit.
+Collecting awscli
+  Downloading awscli-1.14.30-py2.py3-none-any.whl (1.2MB)
+    100% |████████████████████████████████| 1.2MB 1.4MB/s 
+Collecting gym from git+https://github.com/openai/gym.git@v0.7.4#egg=gym
+  Cloning https://github.com/openai/gym.git (to v0.7.4) to /tmp/pip-build-74w28ezt/gym
+Collecting pyglet
+  Downloading pyglet-1.3.0-py2.py3-none-any.whl (1.0MB)
+    100% |████████████████████████████████| 1.0MB 1.0MB/s 
+Collecting jupyter
+  Downloading jupyter-1.0.0-py2.py3-none-any.whl
+Collecting progressbar2
+  Downloading progressbar2-3.34.3-py2.py3-none-any.whl
+Collecting chainer==1.18.0
+  Downloading chainer-1.18.0.tar.gz (1.2MB)
+    100% |████████████████████████████████| 1.2MB 1.1MB/s 
+Collecting tensorflow-gpu==1.0.1 from https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.1-cp35-cp35m-linux_x86_64.whl
+  Downloading https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.1-cp35-cp35m-linux_x86_64.whl (94.8MB)
+    100% |████████████████████████████████| 94.8MB 13kB/s 
+Collecting numpy-stl==2.2.0
+  Downloading numpy_stl-2.2.0-py2.py3-none-any.whl
+Collecting nibabel==2.1.0
+  Downloading nibabel-2.1.0.zip (4.1MB)
+    100% |████████████████████████████████| 4.1MB 328kB/s 
+Collecting pylru==1.0.9
+  Downloading pylru-1.0.9.tar.gz
+Collecting hyperopt
+  Downloading hyperopt-0.1.tar.gz (98kB)
+    100% |████████████████████████████████| 102kB 9.4MB/s 
+Collecting polling
+  Downloading polling-0.3.0.tar.gz
+Requirement already satisfied: numpy>=1.10.4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from mujoco-py==0.5.7)
+Requirement already satisfied: six in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from mujoco-py==0.5.7)
+Collecting enum34>=1.0.0 (from prettytensor==0.6.2)
+  Downloading enum34-1.1.6-py3-none-any.whl
+Collecting tensorflow>=0.9.0rc0 (from prettytensor==0.6.2)
+  Downloading tensorflow-1.5.0rc1-cp35-cp35m-manylinux1_x86_64.whl (43.5MB)
+    100% |████████████████████████████████| 43.5MB 36kB/s 
+Requirement already satisfied: olefile in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from Pillow)
+Requirement already satisfied: setuptools in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipdb)
+Requirement already satisfied: ipython>=0.10.2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipdb)
+Collecting botocore<1.9.0,>=1.8.34 (from boto3)
+  Downloading botocore-1.8.34-py2.py3-none-any.whl (4.0MB)
+    100% |████████████████████████████████| 4.1MB 341kB/s 
+Collecting s3transfer<0.2.0,>=0.1.10 (from boto3)
+  Downloading s3transfer-0.1.12-py2.py3-none-any.whl (59kB)
+    100% |████████████████████████████████| 61kB 12.7MB/s 
+Collecting jmespath<1.0.0,>=0.7.1 (from boto3)
+  Downloading jmespath-0.9.3-py2.py3-none-any.whl
+Collecting coverage>=4.4.1 (from nose2)
+  Downloading coverage-4.4.2-cp35-cp35m-manylinux1_x86_64.whl (197kB)
+    100% |████████████████████████████████| 204kB 7.5MB/s 
+Collecting pyyaml (from keras==1.2.1)
+  Downloading PyYAML-3.12.tar.gz (253kB)
+    100% |████████████████████████████████| 256kB 6.1MB/s 
+Requirement already satisfied: scipy>=0.11 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from Theano)
+Collecting requests (from plotly)
+  Downloading requests-2.18.4-py2.py3-none-any.whl (88kB)
+    100% |████████████████████████████████| 92kB 5.2MB/s 
+Requirement already satisfied: pytz in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from plotly)
+Collecting rsa<=3.5.0,>=3.1.2 (from awscli)
+  Downloading rsa-3.4.2-py2.py3-none-any.whl (46kB)
+    100% |████████████████████████████████| 51kB 9.5MB/s 
+Collecting colorama<=0.3.7,>=0.2.5 (from awscli)
+  Downloading colorama-0.3.7-py2.py3-none-any.whl
+Collecting docutils>=0.10 (from awscli)
+  Downloading docutils-0.14-py3-none-any.whl (543kB)
+    100% |████████████████████████████████| 552kB 2.3MB/s 
+Collecting future (from pyglet)
+  Downloading future-0.16.0.tar.gz (824kB)
+    100% |████████████████████████████████| 829kB 1.5MB/s 
+Requirement already satisfied: notebook in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Collecting qtconsole (from jupyter)
+  Downloading qtconsole-4.3.1-py2.py3-none-any.whl (108kB)
+    100% |████████████████████████████████| 112kB 5.7MB/s 
+Requirement already satisfied: nbconvert in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Requirement already satisfied: ipykernel in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Requirement already satisfied: ipywidgets in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Collecting jupyter-console (from jupyter)
+  Downloading jupyter_console-5.2.0-py2.py3-none-any.whl
+Collecting python-utils>=2.1.0 (from progressbar2)
+  Downloading python_utils-2.2.0-py2.py3-none-any.whl
+Collecting filelock (from chainer==1.18.0)
+  Downloading filelock-3.0.0.tar.gz
+Collecting nose (from chainer==1.18.0)
+  Downloading nose-1.3.7-py3-none-any.whl (154kB)
+    100% |████████████████████████████████| 163kB 7.5MB/s 
+Collecting protobuf (from chainer==1.18.0)
+  Downloading protobuf-3.5.1-cp35-cp35m-manylinux1_x86_64.whl (6.4MB)
+    100% |████████████████████████████████| 6.4MB 228kB/s 
+Requirement already satisfied: wheel>=0.26 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from tensorflow-gpu==1.0.1)
+Collecting nine (from numpy-stl==2.2.0)
+  Downloading nine-1.0.0-py2.py3-none-any.whl
+Collecting pymongo (from hyperopt)
+  Downloading pymongo-3.6.0-cp35-cp35m-manylinux1_x86_64.whl (378kB)
+    100% |████████████████████████████████| 378kB 4.0MB/s 
+Collecting networkx (from hyperopt)
+  Downloading networkx-2.1.zip (1.6MB)
+    100% |████████████████████████████████| 1.6MB 956kB/s 
+Collecting mock (from polling)
+  Downloading mock-2.0.0-py2.py3-none-any.whl (56kB)
+    100% |████████████████████████████████| 61kB 8.2MB/s 
+Collecting pytest (from polling)
+  Downloading pytest-3.3.2-py2.py3-none-any.whl (185kB)
+    100% |████████████████████████████████| 194kB 7.8MB/s 
+Collecting absl-py>=0.1.6 (from tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+  Downloading absl-py-0.1.9.tar.gz (79kB)
+    100% |████████████████████████████████| 81kB 13.5MB/s 
+Collecting tensorflow-tensorboard (from tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+  Downloading tensorflow_tensorboard-1.5.0-py3-none-any.whl (3.0MB)
+    100% |████████████████████████████████| 3.0MB 449kB/s 
+Requirement already satisfied: jedi>=0.10 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2->ipdb)
+Requirement already satisfied: decorator in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2->ipdb)
+Requirement already satisfied: pickleshare in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2->ipdb)
+Requirement already satisfied: simplegeneric>0.8 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2->ipdb)
+Requirement already satisfied: traitlets>=4.2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2->ipdb)
+Requirement already satisfied: prompt_toolkit<2.0.0,>=1.0.4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2->ipdb)
+Requirement already satisfied: pygments in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2->ipdb)
+Requirement already satisfied: pexpect in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2->ipdb)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from botocore<1.9.0,>=1.8.34->boto3)
+Collecting chardet<3.1.0,>=3.0.2 (from requests->plotly)
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133kB)
+    100% |████████████████████████████████| 143kB 8.5MB/s 
+Collecting idna<2.7,>=2.5 (from requests->plotly)
+  Downloading idna-2.6-py2.py3-none-any.whl (56kB)
+    100% |████████████████████████████████| 61kB 10.4MB/s 
+Requirement already satisfied: certifi>=2017.4.17 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from requests->plotly)
+Collecting urllib3<1.23,>=1.21.1 (from requests->plotly)
+  Downloading urllib3-1.22-py2.py3-none-any.whl (132kB)
+    100% |████████████████████████████████| 133kB 10.4MB/s 
+Collecting pyasn1>=0.1.3 (from rsa<=3.5.0,>=3.1.2->awscli)
+  Downloading pyasn1-0.4.2-py2.py3-none-any.whl (71kB)
+    100% |████████████████████████████████| 71kB 11.9MB/s 
+Requirement already satisfied: jinja2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: tornado>=4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: ipython_genutils in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: jupyter_core>=4.4.0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: jupyter_client>=5.2.0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: nbformat in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: Send2Trash in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: terminado>=0.8.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: mistune>=0.7.4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: entrypoints>=0.2.2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: bleach in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: pandocfilters>=1.4.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: testpath in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: widgetsnbextension>=1.2.3 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipywidgets->jupyter)
+Collecting pbr>=0.11 (from mock->polling)
+  Downloading pbr-3.1.1-py2.py3-none-any.whl (99kB)
+    100% |████████████████████████████████| 102kB 13.1MB/s 
+Collecting py>=1.5.0 (from pytest->polling)
+  Downloading py-1.5.2-py2.py3-none-any.whl (88kB)
+    100% |████████████████████████████████| 92kB 11.9MB/s 
+Collecting pluggy<0.7,>=0.5 (from pytest->polling)
+  Downloading pluggy-0.6.0.tar.gz
+Collecting attrs>=17.2.0 (from pytest->polling)
+  Downloading attrs-17.4.0-py2.py3-none-any.whl
+Collecting markdown>=2.6.8 (from tensorflow-tensorboard->tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+  Downloading Markdown-2.6.11-py2.py3-none-any.whl (78kB)
+    100% |████████████████████████████████| 81kB 12.5MB/s 
+Collecting futures>=3.1.1 (from tensorflow-tensorboard->tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+  Downloading futures-3.1.1.tar.gz
+Collecting html5lib==0.9999999 (from tensorflow-tensorboard->tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+  Downloading html5lib-0.9999999.tar.gz (889kB)
+    100% |████████████████████████████████| 890kB 1.7MB/s 
+Requirement already satisfied: werkzeug>=0.11.10 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from tensorflow-tensorboard->tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+Requirement already satisfied: parso==0.1.* in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jedi>=0.10->ipython>=0.10.2->ipdb)
+Requirement already satisfied: wcwidth in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from prompt_toolkit<2.0.0,>=1.0.4->ipython>=0.10.2->ipdb)
+Requirement already satisfied: MarkupSafe>=0.23 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jinja2->notebook->jupyter)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbformat->notebook->jupyter)
+Building wheels for collected packages: atari-py, pyprind, ipdb, PyOpenGL, nose2, msgpack-python, line-profiler, keras, chainer, nibabel, pylru, hyperopt, polling, pyyaml, future, filelock, networkx, absl-py, pluggy, futures, html5lib
+  Running setup.py bdist_wheel for atari-py ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/9d/9a/35/e8c7372d2677e509571935b94142c1876ab6319e8cd12789e5
+  Running setup.py bdist_wheel for pyprind ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/cd/7b/7e/253b8df2dd2d8ea70d76870390300743f58a26317abb11e125
+  Running setup.py bdist_wheel for ipdb ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/cd/9e/a2/b521d7d90da1032f805e08bf00dce70101ddc39dcb1bb245cb
+  Running setup.py bdist_wheel for PyOpenGL ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/1c/17/50/f69d63e0a8169fb890f5a167817a73391be85d30e86fd29504
+  Running setup.py bdist_wheel for nose2 ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/f7/b9/ae/70e307f8b9104909da7c0cbc272291e3b76154175fa05d23eb
+  Running setup.py bdist_wheel for msgpack-python ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/14/68/75/0b7d95841ed4f67f48b112af77154c727c1957ca673d5d1695
+  Running setup.py bdist_wheel for line-profiler ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/85/eb/85/974ce8c8a1adda3d36d60a3c6522d60a526ea7a9060236de68
+  Running setup.py bdist_wheel for keras ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/1b/89/c2/f774b6f20bfae61dcec703e8fce4c7b91d12954da5d881e4a5
+  Running setup.py bdist_wheel for chainer ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/b5/13/f3/fcbe860ffbf302cb3e57569bc70db880d7a2c88759c4fe8a8c
+  Running setup.py bdist_wheel for nibabel ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/c4/ec/00/fc60c9723b56c777ab5979a0b7575114efe2e450186de0bf28
+  Running setup.py bdist_wheel for pylru ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/6b/c5/19/6ffd2f199a590dffc62488601d2a1e5799a8e789ace46cc5ac
+  Running setup.py bdist_wheel for hyperopt ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/4b/0f/9d/1166e48523d3bf7478800f250b0fceae31ac6a08b8a7cca820
+  Running setup.py bdist_wheel for polling ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/82/33/78/61ae6b1d9f6c55928dafbf3cbf0901cfb1f065e3100f2fc9a0
+  Running setup.py bdist_wheel for pyyaml ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/2c/f7/79/13f3a12cd723892437c0cfbde1230ab4d82947ff7b3839a4fc
+  Running setup.py bdist_wheel for future ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/c2/50/7c/0d83b4baac4f63ff7a765bd16390d2ab43c93587fac9d6017a
+  Running setup.py bdist_wheel for filelock ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/ec/51/02/cc3d6bf57c084498a0f21aded40b9c1aa53ef635bb904947ae
+  Running setup.py bdist_wheel for networkx ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/a0/33/4e/7c9228ea77f8090e895d8d2b76f3b5a76997a5b3edeb4e2c6f
+  Running setup.py bdist_wheel for absl-py ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/04/f5/7c/5d4eab10ddf87dec875016e74ba289d87270a90fb2662a76fc
+  Running setup.py bdist_wheel for pluggy ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/df/44/8e/e136760ae525eac46b3e3db643ef58ff1753177b5a722b0c96
+  Running setup.py bdist_wheel for futures ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/ad/79/48/b32521764d59b16fd1bc0ffd5862f6d3bf770c7d73ea1fb12a
+  Running setup.py bdist_wheel for html5lib ... done
+  Stored in directory: /home/raunakbh/.cache/pip/wheels/6f/85/6c/56b8e1292c6214c4eb73b9dda50f53e8e977bf65989373c962
+Successfully built atari-py pyprind ipdb PyOpenGL nose2 msgpack-python line-profiler keras chainer nibabel pylru hyperopt polling pyyaml future filelock networkx absl-py pluggy futures html5lib
+Installing collected packages: atari-py, pyprind, ipdb, jmespath, docutils, botocore, s3transfer, boto3, PyOpenGL, coverage, nose2, tqdm, msgpack-python, cached-property, line-profiler, cloudpickle, Cython, redis, Theano, pyyaml, keras, Lasagne, chardet, idna, urllib3, requests, plotly, pyasn1, rsa, colorama, awscli, future, pyglet, gym, qtconsole, jupyter-console, jupyter, python-utils, progressbar2, filelock, nose, protobuf, chainer, tensorflow-gpu, nine, numpy-stl, nibabel, pylru, pymongo, networkx, hyperopt, pbr, mock, py, pluggy, attrs, pytest, polling, mujoco-py, enum34, absl-py, markdown, futures, html5lib, tensorflow-tensorboard, tensorflow, prettytensor
+  Running setup.py install for Theano ... done
+  Running setup.py install for Lasagne ... done
+  Running setup.py install for plotly ... done
+  Running setup.py install for gym ... done
+  Running setup.py install for mujoco-py ... done
+  Found existing installation: html5lib 1.0.1
+    Uninstalling html5lib-1.0.1:
+      Successfully uninstalled html5lib-1.0.1
+  Running setup.py install for prettytensor ... done
+Successfully installed Cython-0.27.3 Lasagne-0.2.dev1 PyOpenGL-3.1.0 Theano-0.9.0.dev1 absl-py-0.1.9 atari-py-0.1.1 attrs-17.4.0 awscli-1.14.30 boto3-1.5.20 botocore-1.8.34 cached-property-1.3.1 chainer-1.18.0 chardet-3.0.4 cloudpickle-0.5.2 colorama-0.3.7 coverage-4.4.2 docutils-0.14 enum34-1.1.6 filelock-3.0.0 future-0.16.0 futures-3.1.1 gym-0.7.4 html5lib-0.9999999 hyperopt-0.1 idna-2.6 ipdb-0.10.3 jmespath-0.9.3 jupyter-1.0.0 jupyter-console-5.2.0 keras-1.2.1 line-profiler-2.1.2 markdown-2.6.11 mock-2.0.0 msgpack-python-0.5.1 mujoco-py-0.5.7 networkx-2.1 nibabel-2.1.0 nine-1.0.0 nose-1.3.7 nose2-0.7.3 numpy-stl-2.2.0 pbr-3.1.1 plotly-1.9.6 pluggy-0.6.0 polling-0.3.0 prettytensor-0.6.2 progressbar2-3.34.3 protobuf-3.5.1 py-1.5.2 pyasn1-0.4.2 pyglet-1.3.0 pylru-1.0.9 pymongo-3.6.0 pyprind-2.11.1 pytest-3.3.2 python-utils-2.2.0 pyyaml-3.12 qtconsole-4.3.1 redis-2.10.6 requests-2.18.4 rsa-3.4.2 s3transfer-0.1.12 tensorflow-1.5.0rc1 tensorflow-gpu-1.0.1 tensorflow-tensorboard-1.5.0 tqdm-4.19.5 urllib3-1.22
+#
+# To activate this environment, use:
+# > source activate rllab3
+#
+# To deactivate an active environment, use:
+# > source deactivate
+#
+
+raunakbh@tver:~/rllab$ conda env update
+Fetching package metadata .......................
+Solving package specifications: .
+Ignoring tensorflow-gpu: markers 'sys_platform == "darwin"' don't match your environment
+Collecting git+https://github.com/inksci/mujoco-py-v0.5.7.git
+  Cloning https://github.com/inksci/mujoco-py-v0.5.7.git to /tmp/pip-7vpsotwc-build
+  Requirement already satisfied (use --upgrade to upgrade): mujoco-py==0.5.7 from git+https://github.com/inksci/mujoco-py-v0.5.7.git in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Collecting git+https://github.com/neocxi/prettytensor.git
+  Cloning https://github.com/neocxi/prettytensor.git to /tmp/pip-0p9io6d4-build
+  Requirement already satisfied (use --upgrade to upgrade): prettytensor==0.6.2 from git+https://github.com/neocxi/prettytensor.git in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: Pillow in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: atari-py in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: pyprind in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: ipdb in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: boto3 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: PyOpenGL in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: nose2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: pyzmq in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: tqdm in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: msgpack-python in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: cached_property in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: line_profiler in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: cloudpickle in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: Cython in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: redis in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: keras==1.2.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: Theano from git+https://github.com/Theano/Theano.git@adfe319ce6b781083d8dc3200fb4481b00853791#egg=Theano in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: Lasagne from git+https://github.com/neocxi/Lasagne.git@484866cf8b38d878e92d521be445968531646bb8#egg=Lasagne in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: plotly from git+https://github.com/plotly/plotly.py.git@2594076e29584ede2d09f2aa40a8a195b3f3fc66#egg=plotly in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: awscli in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: gym from git+https://github.com/openai/gym.git@v0.7.4#egg=gym in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: pyglet in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: jupyter in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: progressbar2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: chainer==1.18.0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: tensorflow-gpu==1.0.1 from https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.1-cp35-cp35m-linux_x86_64.whl in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: numpy-stl==2.2.0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: nibabel==2.1.0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: pylru==1.0.9 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: hyperopt in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: polling in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Requirement already satisfied: numpy>=1.10.4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from mujoco-py==0.5.7)
+Requirement already satisfied: six in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from mujoco-py==0.5.7)
+Requirement already satisfied: enum34>=1.0.0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from prettytensor==0.6.2)
+Requirement already satisfied: tensorflow>=0.9.0rc0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from prettytensor==0.6.2)
+Requirement already satisfied: olefile in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from Pillow)
+Requirement already satisfied: setuptools in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipdb)
+Requirement already satisfied: ipython>=0.10.2; python_version >= "3.3" in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipdb)
+Requirement already satisfied: s3transfer<0.2.0,>=0.1.10 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from boto3)
+Requirement already satisfied: botocore<1.9.0,>=1.8.34 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from boto3)
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from boto3)
+Requirement already satisfied: coverage>=4.4.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nose2)
+Requirement already satisfied: pyyaml in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from keras==1.2.1)
+Requirement already satisfied: scipy>=0.11 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from Theano)
+Requirement already satisfied: requests in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from plotly)
+Requirement already satisfied: pytz in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from plotly)
+Requirement already satisfied: rsa<=3.5.0,>=3.1.2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from awscli)
+Requirement already satisfied: colorama<=0.3.7,>=0.2.5 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from awscli)
+Requirement already satisfied: docutils>=0.10 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from awscli)
+Requirement already satisfied: future in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from pyglet)
+Requirement already satisfied: ipywidgets in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Requirement already satisfied: qtconsole in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Requirement already satisfied: notebook in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Requirement already satisfied: nbconvert in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Requirement already satisfied: jupyter-console in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Requirement already satisfied: ipykernel in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jupyter)
+Requirement already satisfied: python-utils>=2.1.0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from progressbar2)
+Requirement already satisfied: nose in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from chainer==1.18.0)
+Requirement already satisfied: filelock in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from chainer==1.18.0)
+Requirement already satisfied: protobuf in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from chainer==1.18.0)
+Requirement already satisfied: wheel>=0.26 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from tensorflow-gpu==1.0.1)
+Requirement already satisfied: nine in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from numpy-stl==2.2.0)
+Requirement already satisfied: networkx in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from hyperopt)
+Requirement already satisfied: pymongo in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from hyperopt)
+Requirement already satisfied: pytest in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from polling)
+Requirement already satisfied: mock in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from polling)
+Requirement already satisfied: absl-py>=0.1.6 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+Requirement already satisfied: tensorflow-tensorboard in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+Requirement already satisfied: jedi>=0.10 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: decorator in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: pickleshare in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: simplegeneric>0.8 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: traitlets>=4.2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: prompt_toolkit<2.0.0,>=1.0.4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: pygments in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: pexpect in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from botocore<1.9.0,>=1.8.34->boto3)
+Requirement already satisfied: certifi>=2017.4.17 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from requests->plotly)
+Requirement already satisfied: idna<2.7,>=2.5 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from requests->plotly)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from requests->plotly)
+Requirement already satisfied: urllib3<1.23,>=1.21.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from requests->plotly)
+Requirement already satisfied: pyasn1>=0.1.3 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from rsa<=3.5.0,>=3.1.2->awscli)
+Requirement already satisfied: widgetsnbextension>=1.2.3 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from ipywidgets->jupyter)
+Requirement already satisfied: ipython-genutils in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from qtconsole->jupyter)
+Requirement already satisfied: jupyter-client>=4.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from qtconsole->jupyter)
+Requirement already satisfied: jupyter-core in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from qtconsole->jupyter)
+Requirement already satisfied: jinja2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: tornado>=4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: nbformat in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: Send2Trash in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: terminado>=0.8.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from notebook->jupyter)
+Requirement already satisfied: mistune>=0.7.4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: entrypoints>=0.2.2 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: bleach in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: pandocfilters>=1.4.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: testpath in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: attrs>=17.2.0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from pytest->polling)
+Requirement already satisfied: pluggy<0.7,>=0.5 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from pytest->polling)
+Requirement already satisfied: py>=1.5.0 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from pytest->polling)
+Requirement already satisfied: pbr>=0.11 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from mock->polling)
+Requirement already satisfied: markdown>=2.6.8 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from tensorflow-tensorboard->tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+Requirement already satisfied: werkzeug>=0.11.10 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from tensorflow-tensorboard->tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+Requirement already satisfied: html5lib==0.9999999 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from tensorflow-tensorboard->tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+Requirement already satisfied: futures>=3.1.1 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from tensorflow-tensorboard->tensorflow>=0.9.0rc0->prettytensor==0.6.2)
+Requirement already satisfied: parso==0.1.* in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jedi>=0.10->ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: wcwidth in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from prompt_toolkit<2.0.0,>=1.0.4->ipython>=0.10.2; python_version >= "3.3"->ipdb)
+Requirement already satisfied: MarkupSafe>=0.23 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from jinja2->notebook->jupyter)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages (from nbformat->notebook->jupyter)
+#
+# To activate this environment, use:
+# > source activate rllab3
+#
+# To deactivate an active environment, use:
+# > source deactivate
+#
+
+raunakbh@tver:~/rllab$ source activate rllab3
+(rllab3) raunakbh@tver:~/rllab$ python setup.py develop
+running develop
+running egg_info
+creating rllab.egg-info
+writing top-level names to rllab.egg-info/top_level.txt
+writing dependency_links to rllab.egg-info/dependency_links.txt
+writing rllab.egg-info/PKG-INFO
+writing manifest file 'rllab.egg-info/SOURCES.txt'
+reading manifest file 'rllab.egg-info/SOURCES.txt'
+writing manifest file 'rllab.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/rllab.egg-link (link to .)
+Adding rllab 0.1.0 to easy-install.pth file
+
+Installed /home/raunakbh/rllab
+Processing dependencies for rllab==0.1.0
+Finished processing dependencies for rllab==0.1.0
+(rllab3) raunakbh@tver:~/rllab$ cd ..
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ ls
+miniconda3  rllab
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ wget https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.2-linux-x86_64.tar.gz
+--2018-01-25 13:37:55--  https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.2-linux-x86_64.tar.gz
+Resolving julialang-s3.julialang.org (julialang-s3.julialang.org)... 151.101.54.49
+Connecting to julialang-s3.julialang.org (julialang-s3.julialang.org)|151.101.54.49|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 67935602 (65M) [application/x-gzip]
+Saving to: ‘julia-0.6.2-linux-x86_64.tar.gz’
+
+julia-0.6.2-linux-x86_64. 100%[==================================>]  64.79M  37.7MB/s    in 1.7s    
+
+2018-01-25 13:37:57 (37.7 MB/s) - ‘julia-0.6.2-linux-x86_64.tar.gz’ saved [67935602/67935602]
+
+(rllab3) raunakbh@tver:~$ tar -xf julia-0.6.2-linux-x86_64.tar.gz
+(rllab3) raunakbh@tver:~$ rm julia-0.6.2-linux-x86_64.tar.gz
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ echo "export PATH=$(pwd)/julia-d386e40c17/bin:\$PATH" >> ~/.bashrc
+(rllab3) raunakbh@tver:~$ source ~/.bashrc
+raunakbh@tver:~$ source activate rllab3
+(rllab3) raunakbh@tver:~$ git clone https://github.com/wulfebw/ngsim_env.git
+Cloning into 'ngsim_env'...
+remote: Counting objects: 684, done.
+remote: Compressing objects: 100% (172/172), done.
+remote: Total 684 (delta 123), reused 131 (delta 49), pack-reused 459
+Receiving objects: 100% (684/684), 24.44 MiB | 23.75 MiB/s, done.
+Resolving deltas: 100% (416/416), done.
+Checking connectivity... done.
+(rllab3) raunakbh@tver:~$ julia ngsim_env/julia/deps/build.jl
+INFO: Initializing package repository /home/raunakbh/.julia/v0.6
+INFO: Cloning METADATA from https://github.com/JuliaLang/METADATA.jl
+INFO: Cloning cache of BinDeps from https://github.com/JuliaLang/BinDeps.jl.git
+INFO: Cloning cache of Blosc from https://github.com/stevengj/Blosc.jl.git
+INFO: Cloning cache of Compat from https://github.com/JuliaLang/Compat.jl.git
+INFO: Cloning cache of FileIO from https://github.com/JuliaIO/FileIO.jl.git
+INFO: Cloning cache of HDF5 from https://github.com/JuliaIO/HDF5.jl.git
+INFO: Cloning cache of JLD from https://github.com/JuliaIO/JLD.jl.git
+INFO: Cloning cache of LegacyStrings from https://github.com/JuliaArchive/LegacyStrings.jl.git
+INFO: Cloning cache of SHA from https://github.com/staticfloat/SHA.jl.git
+INFO: Cloning cache of URIParser from https://github.com/JuliaWeb/URIParser.jl.git
+INFO: Installing BinDeps v0.8.6
+INFO: Installing Blosc v0.3.0
+INFO: Installing Compat v0.49.0
+INFO: Installing FileIO v0.6.1
+INFO: Installing HDF5 v0.8.8
+INFO: Installing JLD v0.8.3
+INFO: Installing LegacyStrings v0.3.0
+INFO: Installing SHA v0.5.6
+INFO: Installing URIParser v0.3.0
+INFO: Building Blosc
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   122    0   122    0     0    364      0 --:--:-- --:--:-- --:--:--   364
+100  667k  100  667k    0     0  1019k      0 --:--:-- --:--:-- --:--:-- 1019k
+Compiling libblosc...
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -c -o bitshuffle-generic.o bitshuffle-generic.c
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -c -o shuffle-generic.o shuffle-generic.c
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -c -o shuffle.o shuffle.c
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -c -o blosclz.o blosclz.c
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -c -o blosc.o blosc.c
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -c -o ../internal-complibs/lz4-1.7.5/lz4.o ../internal-complibs/lz4-1.7.5/lz4.c
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -c -o ../internal-complibs/lz4-1.7.5/lz4hc.o ../internal-complibs/lz4-1.7.5/lz4hc.c
+echo "building with AVX2"
+building with AVX2
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -mavx2 -c -o bitshuffle-avx2.o bitshuffle-avx2.c
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -mavx2 -c -o shuffle-avx2.o shuffle-avx2.c
+echo "building without AVX2"
+building without AVX2
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -msse2 -c -o bitshuffle-sse2.o bitshuffle-sse2.c
+gcc -I. -DBLOSC_SHARED_LIBRARY -DSHUFFLE_AVX2_ENABLED -DSHUFFLE_SSE2_ENABLED -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -msse2 -c -o shuffle-sse2.o shuffle-sse2.c
+gcc -fPIC -O3 -pthread -std=gnu99 -DHAVE_LZ4 -I../internal-complibs/lz4-1.7.5 -shared bitshuffle-generic.o shuffle-generic.o shuffle.o blosclz.o blosc.o ../internal-complibs/lz4-1.7.5/lz4.o ../internal-complibs/lz4-1.7.5/lz4hc.o bitshuffle-avx2.o shuffle-avx2.o bitshuffle-sse2.o shuffle-sse2.o -o ../../libblosc.so
+INFO: Building HDF5
+INFO: Package database updated
+INFO: Cloning cache of GridInterpolations from https://github.com/sisl/GridInterpolations.jl.git
+INFO: Installing GridInterpolations v0.1.0
+INFO: Package database updated
+INFO: Cloning cache of Conda from https://github.com/JuliaPy/Conda.jl.git
+INFO: Cloning cache of JSON from https://github.com/JuliaIO/JSON.jl.git
+INFO: Cloning cache of MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
+INFO: Cloning cache of Nullables from https://github.com/JuliaArchive/Nullables.jl.git
+INFO: Cloning cache of PyCall from https://github.com/JuliaPy/PyCall.jl.git
+INFO: Installing Conda v0.7.1
+INFO: Installing JSON v0.16.4
+INFO: Installing MacroTools v0.4.0
+INFO: Installing Nullables v0.0.3
+INFO: Installing PyCall v1.15.0
+INFO: Building Conda
+INFO: Building PyCall
+INFO: Using the Python distribution in the Conda package by default.
+To use a different Python version, set ENV["PYTHON"]="pythoncommand" and re-run Pkg.build("PyCall").
+INFO: Downloading miniconda installer ...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 37.5M  100 37.5M    0     0  55.3M      0 --:--:-- --:--:-- --:--:-- 55.3M
+INFO: Installing miniconda ...
+PREFIX=/home/raunakbh/.julia/v0.6/Conda/deps/usr
+installing: python-2.7.14-h1571d57_29 ...
+Python 2.7.14 :: Anaconda, Inc.
+installing: ca-certificates-2017.08.26-h1d4fec5_0 ...
+installing: conda-env-2.6.0-h36134e3_1 ...
+installing: libgcc-ng-7.2.0-h7cc24e2_2 ...
+installing: libstdcxx-ng-7.2.0-h7a57d05_2 ...
+installing: libffi-3.2.1-hd88cf55_4 ...
+installing: ncurses-6.0-h9df7e31_2 ...
+installing: openssl-1.0.2n-hb7f436b_0 ...
+installing: tk-8.6.7-hc745277_3 ...
+installing: yaml-0.1.7-had09818_2 ...
+installing: zlib-1.2.11-ha838bed_2 ...
+installing: libedit-3.1-heed3624_0 ...
+installing: readline-7.0-ha6073c6_4 ...
+installing: sqlite-3.20.1-hb898158_2 ...
+installing: asn1crypto-0.23.0-py27h7b0c810_0 ...
+installing: certifi-2017.11.5-py27h71e7faf_0 ...
+installing: chardet-3.0.4-py27hfa10054_1 ...
+installing: enum34-1.1.6-py27h99a27e9_1 ...
+installing: idna-2.6-py27h5722d68_1 ...
+installing: ipaddress-1.0.18-py27h337fd85_0 ...
+installing: pycosat-0.6.3-py27ha4109ae_0 ...
+installing: pycparser-2.18-py27hefa08c5_1 ...
+installing: pysocks-1.6.7-py27he2db6d2_1 ...
+installing: ruamel_yaml-0.11.14-py27h672d447_2 ...
+installing: six-1.11.0-py27h5f960f1_1 ...
+installing: cffi-1.11.2-py27ha7929c6_0 ...
+installing: setuptools-36.5.0-py27h68b189e_0 ...
+installing: cryptography-2.1.4-py27h6697b16_0 ...
+installing: wheel-0.30.0-py27h2bc6bb2_1 ...
+installing: pip-9.0.1-py27ha730c48_4 ...
+installing: pyopenssl-17.5.0-py27hcee3be0_0 ...
+installing: urllib3-1.22-py27ha55213b_0 ...
+installing: requests-2.18.4-py27hc5b0589_1 ...
+installing: conda-4.3.31-py27_0 ...
+installation finished.
+Warning: 'defaults' already in 'channels' list, moving to the top
+Fetching package metadata ...........
+Solving package specifications: .
+
+Package plan for installation in environment /home/raunakbh/.julia/v0.6/Conda/deps/usr:
+
+The following NEW packages will be INSTALLED:
+
+    futures: 3.2.0-py27h7b459c0_0
+
+The following packages will be UPDATED:
+
+    conda:   4.3.31-py27_0        --> 4.4.7-py27_0
+
+futures-3.2.0- 100% |#####################################################| Time: 0:00:00  14.07 MB/s
+conda-4.4.7-py 100% |#####################################################| Time: 0:00:00  25.57 MB/s
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/raunakbh/.julia/v0.6/Conda/deps/usr
+
+  added / updated specs: 
+    - numpy
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    numpy-1.14.0               |   py27h3dfced4_1         4.0 MB
+    libgfortran-ng-7.2.0       |       h9f7466a_2         349 KB
+    mkl-2018.0.1               |       h19d6760_4       184.7 MB
+    intel-openmp-2018.0.0      |       hc7b2577_8         618 KB
+    ------------------------------------------------------------
+                                           Total:       189.6 MB
+
+The following NEW packages will be INSTALLED:
+
+    intel-openmp:   2018.0.0-hc7b2577_8  
+    libgfortran-ng: 7.2.0-h9f7466a_2     
+    mkl:            2018.0.1-h19d6760_4  
+    numpy:          1.14.0-py27h3dfced4_1
+
+
+Downloading and Extracting Packages
+numpy 1.14.0: ############################################################################### | 100% 
+libgfortran-ng 7.2.0: ####################################################################### | 100% 
+mkl 2018.0.1: ############################################################################### | 100% 
+intel-openmp 2018.0.0: ###################################################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+INFO: PyCall is using /home/raunakbh/.julia/v0.6/Conda/deps/usr/bin/python (Python 2.7.14) at /home/raunakbh/.julia/v0.6/Conda/deps/usr/bin/python, libpython = /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7
+INFO: /home/raunakbh/.julia/v0.6/PyCall/deps/deps.jl has been updated
+INFO: /home/raunakbh/.julia/v0.6/PyCall/deps/PYTHON has been updated
+INFO: Package database updated
+INFO: Cloning cache of ColorTypes from https://github.com/JuliaGraphics/ColorTypes.jl.git
+INFO: Cloning cache of Colors from https://github.com/JuliaGraphics/Colors.jl.git
+INFO: Cloning cache of FixedPointNumbers from https://github.com/JuliaMath/FixedPointNumbers.jl.git
+INFO: Cloning cache of LaTeXStrings from https://github.com/stevengj/LaTeXStrings.jl.git
+INFO: Cloning cache of PyPlot from https://github.com/JuliaPy/PyPlot.jl.git
+INFO: Cloning cache of Reexport from https://github.com/simonster/Reexport.jl.git
+INFO: Installing ColorTypes v0.6.6
+INFO: Installing Colors v0.8.2
+INFO: Installing FixedPointNumbers v0.4.3
+INFO: Installing LaTeXStrings v0.3.0
+INFO: Installing PyPlot v2.3.2
+INFO: Installing Reexport v0.1.0
+INFO: Building Conda
+INFO: Building PyCall
+INFO: Using the Python distribution in the Conda package by default.
+To use a different Python version, set ENV["PYTHON"]="pythoncommand" and re-run Pkg.build("PyCall").
+Solving environment: done
+
+# All requested packages already installed.
+
+INFO: PyCall is using /home/raunakbh/.julia/v0.6/Conda/deps/usr/bin/python (Python 2.7.14) at /home/raunakbh/.julia/v0.6/Conda/deps/usr/bin/python, libpython = /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7
+INFO: /home/raunakbh/.julia/v0.6/PyCall/deps/deps.jl has not changed
+INFO: /home/raunakbh/.julia/v0.6/PyCall/deps/PYTHON has not changed
+INFO: Package database updated
+INFO: Cloning AutomotiveDrivingModels from https://github.com/sisl/AutomotiveDrivingModels.jl.git
+INFO: Computing changes...
+INFO: Cloning cache of Calculus from https://github.com/johnmyleswhite/Calculus.jl.git
+INFO: Cloning cache of DataArrays from https://github.com/JuliaStats/DataArrays.jl.git
+INFO: Cloning cache of DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+INFO: Cloning cache of Distributions from https://github.com/JuliaStats/Distributions.jl.git
+INFO: Cloning cache of Missings from https://github.com/JuliaData/Missings.jl.git
+INFO: Cloning cache of PDMats from https://github.com/JuliaStats/PDMats.jl.git
+INFO: Cloning cache of Parameters from https://github.com/mauro3/Parameters.jl.git
+INFO: Cloning cache of QuadGK from https://github.com/JuliaMath/QuadGK.jl.git
+INFO: Cloning cache of Rmath from https://github.com/JuliaStats/Rmath.jl.git
+INFO: Cloning cache of SortingAlgorithms from https://github.com/JuliaCollections/SortingAlgorithms.jl.git
+INFO: Cloning cache of SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
+INFO: Cloning cache of StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
+INFO: Cloning cache of StatsFuns from https://github.com/JuliaStats/StatsFuns.jl.git
+INFO: Installing Calculus v0.2.2
+INFO: Installing DataArrays v0.7.0
+INFO: Installing DataStructures v0.7.4
+INFO: Installing Distributions v0.15.0
+INFO: Installing Missings v0.2.5
+INFO: Installing PDMats v0.8.0
+INFO: Installing Parameters v0.8.1
+INFO: Installing QuadGK v0.2.0
+INFO: Installing Rmath v0.3.2
+INFO: Installing SortingAlgorithms v0.2.0
+INFO: Installing SpecialFunctions v0.3.8
+INFO: Installing StatsBase v0.19.5
+INFO: Installing StatsFuns v0.5.0
+INFO: Building SpecialFunctions
+INFO: Building Rmath
+INFO: Attempting to create directory /home/raunakbh/.julia/v0.6/Rmath/deps/downloads
+INFO: Downloading file https://github.com/JuliaLang/Rmath-julia/archive/v0.2.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   129    0   129    0     0    400      0 --:--:-- --:--:-- --:--:--   400
+100  155k  100  155k    0     0   259k      0 --:--:-- --:--:-- --:--:--  834k
+INFO: Done downloading file https://github.com/JuliaLang/Rmath-julia/archive/v0.2.0.tar.gz
+INFO: Attempting to create directory /home/raunakbh/.julia/v0.6/Rmath/deps/src
+INFO: Attempting to create directory /home/raunakbh/.julia/v0.6/Rmath/deps
+INFO: Directory /home/raunakbh/.julia/v0.6/Rmath/deps already exists
+INFO: Attempting to create directory /home/raunakbh/.julia/v0.6/Rmath/deps/usr/lib
+INFO: Changing directory to /home/raunakbh/.julia/v0.6/Rmath/deps/src/Rmath-julia-0.2.0
+make -C src
+make[1]: Entering directory '/home/raunakbh/.julia/v0.6/Rmath/deps/src/Rmath-julia-0.2.0/src'
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qchisq.c -o qchisq.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c i1mach.c -o i1mach.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qnbeta.c -o qnbeta.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c stirlerr.c -o stirlerr.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dcauchy.c -o dcauchy.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dpois.c -o dpois.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c d1mach.c -o d1mach.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rexp.c -o rexp.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c lgamma.c -o lgamma.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qnbinom.c -o qnbinom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c df.c -o df.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pchisq.c -o pchisq.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c wilcox.c -o wilcox.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pf.c -o pf.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rnchisq.c -o rnchisq.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c fmin2.c -o fmin2.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c chebyshev.c -o chebyshev.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c bessel_k.c -o bessel_k.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qexp.c -o qexp.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rgamma.c -o rgamma.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c ftrunc.c -o ftrunc.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c gamma_cody.c -o gamma_cody.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c fprec.c -o fprec.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pweibull.c -o pweibull.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rbinom.c -o rbinom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dgeom.c -o dgeom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c bd0.c -o bd0.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dnchisq.c -o dnchisq.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rf.c -o rf.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c log1p.c -o log1p.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pexp.c -o pexp.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pnbeta.c -o pnbeta.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c polygamma.c -o polygamma.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c runif.c -o runif.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c lgammacor.c -o lgammacor.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rmultinom.c -o rmultinom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pnchisq.c -o pnchisq.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dnbinom.c -o dnbinom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dt.c -o dt.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c bessel_y.c -o bessel_y.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qunif.c -o qunif.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dnt.c -o dnt.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dlnorm.c -o dlnorm.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c fsign.c -o fsign.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c fround.c -o fround.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dnf.c -o dnf.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c expm1.c -o expm1.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c phyper.c -o phyper.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dchisq.c -o dchisq.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dunif.c -o dunif.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rnorm.c -o rnorm.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c imax2.c -o imax2.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pnt.c -o pnt.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qweibull.c -o qweibull.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c callback.c -o callback.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qf.c -o qf.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qbeta.c -o qbeta.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c mlutils.c -o mlutils.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qbinom.c -o qbinom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pbeta.c -o pbeta.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dhyper.c -o dhyper.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rweibull.c -o rweibull.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pgeom.c -o pgeom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dnbeta.c -o dnbeta.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rgeom.c -o rgeom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c lbeta.c -o lbeta.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pnf.c -o pnf.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c gamma.c -o gamma.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c toms708.c -o toms708.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rt.c -o rt.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rcauchy.c -o rcauchy.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c signrank.c -o signrank.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rlnorm.c -o rlnorm.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pgamma.c -o pgamma.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dbinom.c -o dbinom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pnbinom.c -o pnbinom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qgamma.c -o qgamma.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rlogis.c -o rlogis.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c gammalims.c -o gammalims.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dgamma.c -o dgamma.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pcauchy.c -o pcauchy.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qhyper.c -o qhyper.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qnorm.c -o qnorm.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dbeta.c -o dbeta.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qgeom.c -o qgeom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c beta.c -o beta.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qlogis.c -o qlogis.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pt.c -o pt.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c imin2.c -o imin2.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c sign.c -o sign.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dexp.c -o dexp.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rhyper.c -o rhyper.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qt.c -o qt.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c plogis.c -o plogis.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qtukey.c -o qtukey.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c punif.c -o punif.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c cospi.c -o cospi.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c fmax2.c -o fmax2.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rnbinom.c -o rnbinom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rbeta.c -o rbeta.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c bessel_i.c -o bessel_i.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c ptukey.c -o ptukey.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c bessel_j.c -o bessel_j.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qlnorm.c -o qlnorm.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pnorm.c -o pnorm.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c choose.c -o choose.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qnt.c -o qnt.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qcauchy.c -o qcauchy.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qnf.c -o qnf.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c plnorm.c -o plnorm.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dlogis.c -o dlogis.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dweibull.c -o dweibull.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qnchisq.c -o qnchisq.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c pbinom.c -o pbinom.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rchisq.c -o rchisq.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c dnorm.c -o dnorm.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c rpois.c -o rpois.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c qpois.c -o qpois.o
+gcc  -Wall -O3 -fPIC -DMATHLIB_STANDALONE   -std=gnu99 -I../include -DNDEBUG -c ppois.c -o ppois.o
+rm -f libRmath-julia.so
+gcc   -shared -o libRmath-julia.so qchisq.o i1mach.o qnbeta.o stirlerr.o dcauchy.o dpois.o d1mach.o rexp.o lgamma.o qnbinom.o df.o pchisq.o wilcox.o pf.o rnchisq.o fmin2.o chebyshev.o bessel_k.o qexp.o rgamma.o ftrunc.o gamma_cody.o fprec.o pweibull.o rbinom.o dgeom.o bd0.o dnchisq.o rf.o log1p.o pexp.o pnbeta.o polygamma.o runif.o lgammacor.o rmultinom.o pnchisq.o dnbinom.o dt.o bessel_y.o qunif.o dnt.o dlnorm.o fsign.o fround.o dnf.o expm1.o phyper.o dchisq.o dunif.o rnorm.o imax2.o pnt.o qweibull.o callback.o qf.o qbeta.o mlutils.o qbinom.o pbeta.o dhyper.o rweibull.o pgeom.o dnbeta.o rgeom.o lbeta.o pnf.o gamma.o toms708.o rt.o rcauchy.o signrank.o rlnorm.o pgamma.o dbinom.o pnbinom.o qgamma.o rlogis.o gammalims.o dgamma.o pcauchy.o qhyper.o qnorm.o dbeta.o qgeom.o beta.o qlogis.o pt.o imin2.o sign.o dexp.o rhyper.o qt.o plogis.o qtukey.o punif.o cospi.o fmax2.o rnbinom.o rbeta.o bessel_i.o ptukey.o bessel_j.o qlnorm.o pnorm.o choose.o qnt.o qcauchy.o qnf.o plnorm.o dlogis.o dweibull.o qnchisq.o pbinom.o rchisq.o dnorm.o rpois.o qpois.o ppois.o
+make[1]: Leaving directory '/home/raunakbh/.julia/v0.6/Rmath/deps/src/Rmath-julia-0.2.0/src'
+INFO: Changing directory to /home/raunakbh/.julia/v0.6/Rmath/deps/src/Rmath-julia-0.2.0
+INFO: Cloning AutoViz from https://github.com/sisl/AutoViz.jl.git
+INFO: Computing changes...
+INFO: Cloning cache of AbstractFFTs from https://github.com/JuliaMath/AbstractFFTs.jl.git
+INFO: Cloning cache of AxisAlgorithms from https://github.com/timholy/AxisAlgorithms.jl.git
+INFO: Cloning cache of AxisArrays from https://github.com/JuliaArrays/AxisArrays.jl.git
+INFO: Cloning cache of Cairo from https://github.com/JuliaGraphics/Cairo.jl.git
+INFO: Cloning cache of CatIndices from https://github.com/JuliaArrays/CatIndices.jl.git
+INFO: Cloning cache of ColorVectorSpace from https://github.com/JuliaGraphics/ColorVectorSpace.jl.git
+INFO: Cloning cache of ComputationalResources from https://github.com/timholy/ComputationalResources.jl.git
+INFO: Cloning cache of CoordinateTransformations from https://github.com/FugroRoames/CoordinateTransformations.jl.git
+INFO: Cloning cache of CustomUnitRanges from https://github.com/JuliaArrays/CustomUnitRanges.jl.git
+INFO: Cloning cache of DualNumbers from https://github.com/JuliaDiff/DualNumbers.jl.git
+INFO: Cloning cache of FFTViews from https://github.com/JuliaArrays/FFTViews.jl.git
+INFO: Cloning cache of FFTW from https://github.com/JuliaMath/FFTW.jl.git
+INFO: Cloning cache of Glob from https://github.com/vtjnash/Glob.jl.git
+INFO: Cloning cache of Graphics from https://github.com/JuliaGraphics/Graphics.jl.git
+INFO: Cloning cache of Gtk from https://github.com/JuliaGraphics/Gtk.jl.git
+INFO: Cloning cache of GtkReactive from https://github.com/JuliaGizmos/GtkReactive.jl.git
+INFO: Cloning cache of IdentityRanges from https://github.com/JuliaArrays/IdentityRanges.jl.git
+INFO: Cloning cache of ImageAxes from https://github.com/JuliaImages/ImageAxes.jl.git
+INFO: Cloning cache of ImageCore from https://github.com/JuliaImages/ImageCore.jl.git
+INFO: Cloning cache of ImageFiltering from https://github.com/JuliaImages/ImageFiltering.jl.git
+INFO: Cloning cache of ImageMetadata from https://github.com/JuliaImages/ImageMetadata.jl.git
+INFO: Cloning cache of ImageMorphology from https://github.com/JuliaImages/ImageMorphology.jl.git
+INFO: Cloning cache of ImageTransformations from https://github.com/JuliaImages/ImageTransformations.jl.git
+INFO: Cloning cache of ImageView from https://github.com/JuliaImages/ImageView.jl.git
+INFO: Cloning cache of Images from https://github.com/JuliaImages/Images.jl.git
+INFO: Cloning cache of IndirectArrays from https://github.com/JuliaArrays/IndirectArrays.jl.git
+INFO: Cloning cache of Interact from https://github.com/JuliaGizmos/Interact.jl.git
+INFO: Cloning cache of Interpolations from https://github.com/JuliaMath/Interpolations.jl.git
+INFO: Cloning cache of IntervalSets from https://github.com/JuliaMath/IntervalSets.jl.git
+INFO: Cloning cache of IterTools from https://github.com/JuliaCollections/IterTools.jl.git
+INFO: Cloning cache of MappedArrays from https://github.com/JuliaArrays/MappedArrays.jl.git
+INFO: Cloning cache of NBInclude from https://github.com/stevengj/NBInclude.jl.git
+INFO: Cloning cache of NaNMath from https://github.com/mlubin/NaNMath.jl.git
+INFO: Cloning cache of OffsetArrays from https://github.com/JuliaArrays/OffsetArrays.jl.git
+INFO: Cloning cache of PaddedViews from https://github.com/JuliaArrays/PaddedViews.jl.git
+INFO: Cloning cache of RangeArrays from https://github.com/JuliaArrays/RangeArrays.jl.git
+INFO: Cloning cache of Ratios from https://github.com/timholy/Ratios.jl.git
+INFO: Cloning cache of Reactive from https://github.com/JuliaGizmos/Reactive.jl.git
+INFO: Cloning cache of Reel from https://github.com/shashi/Reel.jl.git
+INFO: Cloning cache of Requires from https://github.com/MikeInnes/Requires.jl.git
+INFO: Cloning cache of Rotations from https://github.com/FugroRoames/Rotations.jl.git
+INFO: Cloning cache of RoundingIntegers from https://github.com/JuliaMath/RoundingIntegers.jl.git
+INFO: Cloning cache of SIUnits from https://github.com/Keno/SIUnits.jl.git
+INFO: Cloning cache of ShowItLikeYouBuildIt from https://github.com/JuliaArrays/ShowItLikeYouBuildIt.jl.git
+INFO: Cloning cache of SimpleTraits from https://github.com/mauro3/SimpleTraits.jl.git
+INFO: Cloning cache of StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+INFO: Cloning cache of TexExtensions from https://github.com/Keno/TexExtensions.jl.git
+INFO: Cloning cache of TiledIteration from https://github.com/JuliaArrays/TiledIteration.jl.git
+INFO: Cloning cache of VideoIO from https://github.com/kmsquire/VideoIO.jl.git
+INFO: Cloning cache of WoodburyMatrices from https://github.com/timholy/WoodburyMatrices.jl.git
+INFO: Installing AbstractFFTs v0.2.1
+INFO: Installing AxisAlgorithms v0.2.0
+INFO: Installing AxisArrays v0.2.0
+INFO: Installing Cairo v0.4.0
+INFO: Installing CatIndices v0.1.0
+INFO: Installing ColorVectorSpace v0.5.2
+INFO: Installing ComputationalResources v0.2.0
+INFO: Installing CoordinateTransformations v0.4.1
+INFO: Installing CustomUnitRanges v0.1.0
+INFO: Installing DualNumbers v0.3.0
+INFO: Installing FFTViews v0.1.0
+INFO: Installing FFTW v0.0.4
+INFO: Installing Glob v1.1.1
+INFO: Installing Graphics v0.2.0
+INFO: Installing Gtk v0.13.1
+INFO: Installing GtkReactive v0.4.0
+INFO: Installing IdentityRanges v0.1.0
+INFO: Installing ImageAxes v0.4.0
+INFO: Installing ImageCore v0.5.0
+INFO: Installing ImageFiltering v0.2.3
+INFO: Installing ImageMetadata v0.4.0
+INFO: Installing ImageMorphology v0.0.2
+INFO: Installing ImageTransformations v0.4.1
+INFO: Installing ImageView v0.6.0
+INFO: Installing Images v0.12.0
+INFO: Installing IndirectArrays v0.3.0
+INFO: Installing Interact v0.6.3
+INFO: Installing Interpolations v0.7.3
+INFO: Installing IntervalSets v0.1.1
+INFO: Installing IterTools v0.2.1
+INFO: Installing MappedArrays v0.0.7
+INFO: Installing NBInclude v1.2.0
+INFO: Installing NaNMath v0.3.0
+INFO: Installing OffsetArrays v0.4.2
+INFO: Installing PaddedViews v0.2.0
+INFO: Installing RangeArrays v0.2.0
+INFO: Installing Ratios v0.2.0
+INFO: Installing Reactive v0.6.0
+INFO: Installing Reel v1.0.1
+INFO: Installing Requires v0.4.3
+INFO: Installing Rotations v0.6.1
+INFO: Installing RoundingIntegers v0.0.3
+INFO: Installing SIUnits v0.1.0
+INFO: Installing ShowItLikeYouBuildIt v0.2.0
+INFO: Installing SimpleTraits v0.5.1
+INFO: Installing StaticArrays v0.6.6
+INFO: Installing TexExtensions v0.1.0
+INFO: Installing TiledIteration v0.1.0
+INFO: Installing VideoIO v0.2.0
+INFO: Installing WoodburyMatrices v0.2.2
+INFO: Building Cairo
+INFO: Building SpecialFunctions
+INFO: Building FFTW
+INFO: Building Gtk
+INFO: Building Interact
+WARNING: IJulia is not installed. run Pkg.build("Interact")
+once you install IJulia to use Interact inside IJulia
+INFO: Building VideoIO
+INFO: Cloning BayesNets from https://github.com/sisl/BayesNets.jl.git
+INFO: Computing changes...
+INFO: Cloning cache of CodecZlib from https://github.com/bicycle1885/CodecZlib.jl.git
+INFO: Cloning cache of DataFrames from https://github.com/JuliaData/DataFrames.jl.git
+INFO: Cloning cache of Discretizers from https://github.com/sisl/Discretizers.jl.git
+INFO: Cloning cache of GZip from https://github.com/JuliaIO/GZip.jl.git
+INFO: Cloning cache of Iterators from https://github.com/JuliaCollections/Iterators.jl.git
+INFO: Cloning cache of LightGraphs from https://github.com/JuliaGraphs/LightGraphs.jl.git
+INFO: Cloning cache of LightXML from https://github.com/JuliaIO/LightXML.jl.git
+INFO: Cloning cache of TikzGraphs from https://github.com/sisl/TikzGraphs.jl.git
+INFO: Cloning cache of TikzPictures from https://github.com/sisl/TikzPictures.jl.git
+INFO: Cloning cache of TranscodingStreams from https://github.com/bicycle1885/TranscodingStreams.jl.git
+INFO: Installing CodecZlib v0.4.2
+INFO: Downgrading DataArrays: v0.7.0 => v0.6.2
+INFO: Installing DataFrames v0.10.1
+INFO: Installing Discretizers v2.1.0
+INFO: Installing GZip v0.3.0
+INFO: Installing Iterators v0.3.1
+INFO: Installing LightGraphs v0.11.1
+INFO: Installing LightXML v0.5.0
+INFO: Installing TikzGraphs v0.5.1
+INFO: Installing TikzPictures v1.2.0
+INFO: Installing TranscodingStreams v0.4.1
+INFO: Removing Missings v0.2.5
+INFO: Building SpecialFunctions
+INFO: Building LightXML
+INFO: Package database updated
+INFO: Cloning NGSIM from https://github.com/sisl/NGSIM.jl.git
+INFO: Computing changes...
+INFO: No packages to install, update or remove
+INFO: Cloning AutoRisk from https://github.com/wulfebw/AutoRisk.jl.git
+INFO: Computing changes...
+INFO: No packages to install, update or remove
+INFO: Building SpecialFunctions
+INFO: Building Rmath
+INFO: Building AutomotiveDrivingModels
+INFO: Cloning Vec from https://github.com/tawheeler/Vec.jl.git
+INFO: Computing changes...
+INFO: No packages to install, update or remove
+INFO: Cloning Records from https://github.com/tawheeler/Records.jl.git
+INFO: Computing changes...
+INFO: No packages to install, update or remove
+INFO: Building Interact
+WARNING: IJulia is not installed. run Pkg.build("Interact")
+once you install IJulia to use Interact inside IJulia
+INFO: Building Cairo
+INFO: Building FFTW
+INFO: Building SpecialFunctions
+INFO: Building Gtk
+INFO: Building VideoIO
+INFO: Building SpecialFunctions
+INFO: Building Rmath
+INFO: Building LightXML
+INFO: Building BayesNets
+(rllab3) raunakbh@tver:~$ echo "using Iterators" >> ~/.juliarc.jl
+(rllab3) raunakbh@tver:~$ echo "export LD_PRELOAD=${HOME}/.julia/v0.6/Conda/deps/usr/lib/libz.so" >> ~/.bashrc 
+(rllab3) raunakbh@tver:~$ source ~/.bashrc
+raunakbh@tver:~$ echo "push!(LOAD_PATH, \"$(pwd)/ngsim_env/julia/AutoEnvs\")" >> ~/.juliarc.jl
+raunakbh@tver:~$ source activate rllab3
+(rllab3) raunakbh@tver:~$ julia
+               _
+   _       _ _(_)_     |  A fresh approach to technical computing
+  (_)     | (_) (_)    |  Documentation: https://docs.julialang.org
+   _ _   _| |_  __ _   |  Type "?help" for help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 0.6.2 (2017-12-13 18:08 UTC)
+ _/ |\__'_|_|_|\__'_|  |  Official http://julialang.org/ release
+|__/                   |  x86_64-pc-linux-gnu
+
+julia> ENV["PYTHON"] = "/home/raunakbh/miniconda3/envs/rllab3/bin/python"
+"/home/raunakbh/miniconda3/envs/rllab3/bin/python"
+
+julia> using PyCall
+INFO: Precompiling module PyCall.
+
+julia> using PyPlot
+INFO: Precompiling module PyPlot.
+INFO: Installing matplotlib via the Conda matplotlib package...
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/raunakbh/.julia/v0.6/Conda/deps/usr
+
+  added / updated specs: 
+    - matplotlib
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    backports_abc-0.5          |   py27h7b3c97b_0          12 KB
+    pyqt-5.6.0                 |   py27h4b1e83c_5         5.3 MB
+    python-dateutil-2.6.1      |   py27h4ca5741_1         237 KB
+    libxml2-2.9.4              |       h2e8b1d7_6         2.0 MB
+    gst-plugins-base-1.12.4    |       h33fb286_0         4.8 MB
+    matplotlib-2.1.2           |   py27h0e671d2_0         6.6 MB
+    xz-5.2.3                   |       h55aa19d_2         357 KB
+    tornado-4.5.3              |           py27_0         595 KB
+    subprocess32-3.2.7         |   py27h373dbce_0          40 KB
+    qt-5.6.2                   |      h974d657_12        44.5 MB
+    icu-58.2                   |       h9c2bf20_1        22.5 MB
+    pyparsing-2.2.0            |   py27hf1513f8_1          93 KB
+    freetype-2.8               |       hab7d2ae_1         804 KB
+    cycler-0.10.0              |   py27hc7354d3_0          13 KB
+    gstreamer-1.12.4           |       hb53b477_0         3.6 MB
+    fontconfig-2.12.4          |       h88586e7_1         282 KB
+    pcre-8.41                  |       hc27e229_1         251 KB
+    glib-2.53.6                |       h5d9569c_2         8.4 MB
+    pytz-2017.3                |   py27h001bace_0         210 KB
+    libxcb-1.12                |       hcd93eb1_4         446 KB
+    backports-1.0              |   py27h63c9359_1           3 KB
+    libpng-1.6.34              |       hb9fc6fc_0         334 KB
+    dbus-1.12.2                |       hd3e2b69_0         551 KB
+    sip-4.18.1                 |   py27he9ba0ab_2         278 KB
+    singledispatch-3.4.0.3     |   py27h9bcb476_0          15 KB
+    backports.functools_lru_cache-1.4|   py27he8db605_1           9 KB
+    functools32-3.2.3.2        |   py27h4ead58f_1          22 KB
+    expat-2.2.5                |       he0dffb1_0         186 KB
+    ssl_match_hostname-3.5.0.1 |   py27h4ec10b9_2           9 KB
+    jpeg-9b                    |       h024ee3a_2         248 KB
+    ------------------------------------------------------------
+                                           Total:       102.5 MB
+
+The following NEW packages will be INSTALLED:
+
+    backports:                     1.0-py27h63c9359_1    
+    backports.functools_lru_cache: 1.4-py27he8db605_1    
+    backports_abc:                 0.5-py27h7b3c97b_0    
+    cycler:                        0.10.0-py27hc7354d3_0 
+    dbus:                          1.12.2-hd3e2b69_0     
+    expat:                         2.2.5-he0dffb1_0      
+    fontconfig:                    2.12.4-h88586e7_1     
+    freetype:                      2.8-hab7d2ae_1        
+    functools32:                   3.2.3.2-py27h4ead58f_1
+    glib:                          2.53.6-h5d9569c_2     
+    gst-plugins-base:              1.12.4-h33fb286_0     
+    gstreamer:                     1.12.4-hb53b477_0     
+    icu:                           58.2-h9c2bf20_1       
+    jpeg:                          9b-h024ee3a_2         
+    libpng:                        1.6.34-hb9fc6fc_0     
+    libxcb:                        1.12-hcd93eb1_4       
+    libxml2:                       2.9.4-h2e8b1d7_6      
+    matplotlib:                    2.1.2-py27h0e671d2_0  
+    pcre:                          8.41-hc27e229_1       
+    pyparsing:                     2.2.0-py27hf1513f8_1  
+    pyqt:                          5.6.0-py27h4b1e83c_5  
+    python-dateutil:               2.6.1-py27h4ca5741_1  
+    pytz:                          2017.3-py27h001bace_0 
+    qt:                            5.6.2-h974d657_12     
+    singledispatch:                3.4.0.3-py27h9bcb476_0
+    sip:                           4.18.1-py27he9ba0ab_2 
+    ssl_match_hostname:            3.5.0.1-py27h4ec10b9_2
+    subprocess32:                  3.2.7-py27h373dbce_0  
+    tornado:                       4.5.3-py27_0          
+    xz:                            5.2.3-h55aa19d_2      
+
+
+Downloading and Extracting Packages
+backports_abc 0.5: ########################################################################## | 100% 
+pyqt 5.6.0: ################################################################################# | 100% 
+python-dateutil 2.6.1: ###################################################################### | 100% 
+libxml2 2.9.4: ############################################################################## | 100% 
+gst-plugins-base 1.12.4: #################################################################### | 100% 
+matplotlib 2.1.2: ########################################################################### | 100% 
+xz 5.2.3: ################################################################################### | 100% 
+tornado 4.5.3: ############################################################################## | 100% 
+subprocess32 3.2.7: ######################################################################### | 100% 
+qt 5.6.2: ################################################################################### | 100% 
+icu 58.2: ################################################################################### | 100% 
+pyparsing 2.2.0: ############################################################################ | 100% 
+freetype 2.8: ############################################################################### | 100% 
+cycler 0.10.0: ############################################################################## | 100% 
+gstreamer 1.12.4: ########################################################################### | 100% 
+fontconfig 2.12.4: ########################################################################## | 100% 
+pcre 8.41: ################################################################################## | 100% 
+glib 2.53.6: ################################################################################ | 100% 
+pytz 2017.3: ################################################################################ | 100% 
+libxcb 1.12: ################################################################################ | 100% 
+backports 1.0: ############################################################################## | 100% 
+libpng 1.6.34: ############################################################################## | 100% 
+dbus 1.12.2: ################################################################################ | 100% 
+sip 4.18.1: ################################################################################# | 100% 
+singledispatch 3.4.0.3: ##################################################################### | 100% 
+backports.functools_lru_cache 1.4: ########################################################## | 100% 
+functools32 3.2.3.2: ######################################################################## | 100% 
+expat 2.2.5: ################################################################################ | 100% 
+ssl_match_hostname 3.5.0.1: ################################################################# | 100% 
+jpeg 9b: #################################################################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+WARNING: No working GUI backend found for matplotlib
+ERROR: InitError: PyError (ccall(@pysym(:PyImport_ImportModule), PyPtr, (Cstring,), name)
+
+The Python package mpl_toolkits.mplot3d could not be found by pyimport. Usually this means
+that you did not install mpl_toolkits.mplot3d in the Python version being used by PyCall.
+
+PyCall is currently configured to use the Julia-specific Python distribution
+installed by the Conda.jl package.  To install the mpl_toolkits.mplot3d module, you can
+use `pyimport_conda("mpl_toolkits.mplot3d", PKG)`, where PKG is the Anaconda
+package the contains the module mpl_toolkits.mplot3d, or alternatively you can use the
+Conda package directly (via `using Conda` followed by `Conda.add` etcetera).
+
+Alternatively, if you want to use a different Python distribution on your
+system, such as a system-wide Python (as opposed to the Julia-specific Python),
+you can re-configure PyCall with that Python.   As explained in the PyCall
+documentation, set ENV["PYTHON"] to the path/name of the python executable
+you want to use, run Pkg.build("PyCall"), and re-launch Julia.
+
+) <type 'exceptions.ImportError'>
+ImportError('No module named mpl_toolkits.mplot3d',)
+
+Stacktrace:
+ [1] pyerr_check at /home/raunakbh/.julia/v0.6/PyCall/src/exception.jl:56 [inlined]
+ [2] pyerr_check at /home/raunakbh/.julia/v0.6/PyCall/src/exception.jl:61 [inlined]
+ [3] macro expansion at /home/raunakbh/.julia/v0.6/PyCall/src/exception.jl:81 [inlined]
+ [4] pyimport(::String) at /home/raunakbh/.julia/v0.6/PyCall/src/PyCall.jl:374
+ [5] __init__() at /home/raunakbh/.julia/v0.6/PyPlot/src/init.jl:205
+ [6] _include_from_serialized(::String) at ./loading.jl:157
+ [7] _require_from_serialized(::Int64, ::Symbol, ::String, ::Bool) at ./loading.jl:200
+ [8] _require(::Symbol) at ./loading.jl:498
+ [9] require(::Symbol) at ./loading.jl:405
+during initialization of module PyPlot
+
+julia> quti
+ERROR: UndefVarError: quti not defined
+
+julia> quit
+quit (generic function with 1 method)
+
+julia> exit()
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ pip install --upgrade matplotlib
+Collecting matplotlib
+  Downloading matplotlib-2.1.2-cp35-cp35m-manylinux1_x86_64.whl (15.0MB)
+    100% |████████████████████████████████| 15.0MB 105kB/s 
+Requirement already up-to-date: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in ./miniconda3/envs/rllab3/lib/python3.5/site-packages (from matplotlib)
+Requirement already up-to-date: six>=1.10 in ./miniconda3/envs/rllab3/lib/python3.5/site-packages (from matplotlib)
+Requirement already up-to-date: cycler>=0.10 in ./miniconda3/envs/rllab3/lib/python3.5/site-packages (from matplotlib)
+Requirement already up-to-date: python-dateutil>=2.1 in ./miniconda3/envs/rllab3/lib/python3.5/site-packages (from matplotlib)
+Collecting numpy>=1.7.1 (from matplotlib)
+  Downloading numpy-1.14.0-cp35-cp35m-manylinux1_x86_64.whl (17.1MB)
+    100% |████████████████████████████████| 17.1MB 101kB/s 
+Requirement already up-to-date: pytz in ./miniconda3/envs/rllab3/lib/python3.5/site-packages (from matplotlib)
+Installing collected packages: numpy, matplotlib
+  Found existing installation: numpy 1.12.0
+    Uninstalling numpy-1.12.0:
+      Successfully uninstalled numpy-1.12.0
+  Found existing installation: matplotlib 2.0.2
+    Uninstalling matplotlib-2.0.2:
+      Successfully uninstalled matplotlib-2.0.2
+Successfully installed matplotlib-2.1.2 numpy-1.14.0
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ python
+Python 3.5.2 |Continuum Analytics, Inc.| (default, Jul  2 2016, 17:53:06) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import mpl_toolkits
+>>> exit()
+(rllab3) raunakbh@tver:~$ julia
+               _
+   _       _ _(_)_     |  A fresh approach to technical computing
+  (_)     | (_) (_)    |  Documentation: https://docs.julialang.org
+   _ _   _| |_  __ _   |  Type "?help" for help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 0.6.2 (2017-12-13 18:08 UTC)
+ _/ |\__'_|_|_|\__'_|  |  Official http://julialang.org/ release
+|__/                   |  x86_64-pc-linux-gnu
+
+julia> using PyPlot
+WARNING: No working GUI backend found for matplotlib
+
+julia> using AutoEnvs
+INFO: Precompiling module AutoEnvs.
+WARNING: No working GUI backend found for matplotlib
+WARNING: Method definition reset(AutoEnvs.Env) in module AutoEnvs at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:17 overwritten at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:18.
+WARNING: Method definition reset(AutoEnvs.Env) in module AutoEnvs at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:17 overwritten at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:18.
+
+julia> quit()
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ ls
+julia-d386e40c17  miniconda3  ngsim_env  rllab
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ source deactivate
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ Pkg.clone("https://github.com/tawheeler/Vec.jl.git")
+-bash: syntax error near unexpected token `"https://github.com/tawheeler/Vec.jl.git"'
+raunakbh@tver:~$ source activate rllab3
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ Pkg.clone("https://github.com/tawheeler/Vec.jl.git")
+-bash: syntax error near unexpected token `"https://github.com/tawheeler/Vec.jl.git"'
+(rllab3) raunakbh@tver:~$ julia
+               _
+   _       _ _(_)_     |  A fresh approach to technical computing
+  (_)     | (_) (_)    |  Documentation: https://docs.julialang.org
+   _ _   _| |_  __ _   |  Type "?help" for help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 0.6.2 (2017-12-13 18:08 UTC)
+ _/ |\__'_|_|_|\__'_|  |  Official http://julialang.org/ release
+|__/                   |  x86_64-pc-linux-gnu
+
+julia> Pkg.clone("https://github.com/tawheeler/Vec.jl.git")
+INFO: Cloning Vec from https://github.com/tawheeler/Vec.jl.git
+ERROR: Vec already exists
+Stacktrace:
+ [1] clone(::String, ::SubString{String}) at ./pkg/entry.jl:193
+ [2] (::Base.Pkg.Dir.##4#7{Array{Any,1},Base.Pkg.Entry.#clone,Tuple{String}})() at ./pkg/dir.jl:36
+ [3] cd(::Base.Pkg.Dir.##4#7{Array{Any,1},Base.Pkg.Entry.#clone,Tuple{String}}, ::String) at ./file.jl:70
+ [4] #cd#1(::Array{Any,1}, ::Function, ::Function, ::String, ::Vararg{String,N} where N) at ./pkg/dir.jl:36
+ [5] clone(::String) at ./pkg/pkg.jl:169
+
+julia> ^C
+
+julia> Pkg.clone("https://github.com/tawheeler/Records.jl.git")
+INFO: Cloning Records from https://github.com/tawheeler/Records.jl.git
+ERROR: Records already exists
+Stacktrace:
+ [1] clone(::String, ::SubString{String}) at ./pkg/entry.jl:193
+ [2] (::Base.Pkg.Dir.##4#7{Array{Any,1},Base.Pkg.Entry.#clone,Tuple{String}})() at ./pkg/dir.jl:36
+ [3] cd(::Base.Pkg.Dir.##4#7{Array{Any,1},Base.Pkg.Entry.#clone,Tuple{String}}, ::String) at ./file.jl:70
+ [4] #cd#1(::Array{Any,1}, ::Function, ::Function, ::String, ::Vararg{String,N} where N) at ./pkg/dir.jl:36
+ [5] clone(::String) at ./pkg/pkg.jl:169
+
+julia> 
+
+julia> Pkg.clone("https://github.com/sisl/AutomotiveDrivingModels.jl.git")
+INFO: Cloning AutomotiveDrivingModels from https://github.com/sisl/AutomotiveDrivingModels.jl.git
+ERROR: AutomotiveDrivingModels already exists
+Stacktrace:
+ [1] clone(::String, ::SubString{String}) at ./pkg/entry.jl:193
+ [2] (::Base.Pkg.Dir.##4#7{Array{Any,1},Base.Pkg.Entry.#clone,Tuple{String}})() at ./pkg/dir.jl:36
+ [3] cd(::Base.Pkg.Dir.##4#7{Array{Any,1},Base.Pkg.Entry.#clone,Tuple{String}}, ::String) at ./file.jl:70
+ [4] #cd#1(::Array{Any,1}, ::Function, ::Function, ::String, ::Vararg{String,N} where N) at ./pkg/dir.jl:36
+ [5] clone(::String) at ./pkg/pkg.jl:169
+
+julia> Pkg.clone("https://github.com/tawheeler/NGSIM.jl.git")
+INFO: Cloning NGSIM from https://github.com/tawheeler/NGSIM.jl.git
+ERROR: NGSIM already exists
+Stacktrace:
+ [1] clone(::String, ::SubString{String}) at ./pkg/entry.jl:193
+ [2] (::Base.Pkg.Dir.##4#7{Array{Any,1},Base.Pkg.Entry.#clone,Tuple{String}})() at ./pkg/dir.jl:36
+ [3] cd(::Base.Pkg.Dir.##4#7{Array{Any,1},Base.Pkg.Entry.#clone,Tuple{String}}, ::String) at ./file.jl:70
+ [4] #cd#1(::Array{Any,1}, ::Function, ::Function, ::String, ::Vararg{String,N} where N) at ./pkg/dir.jl:36
+ [5] clone(::String) at ./pkg/pkg.jl:169
+
+julia> 
+
+julia> 
+
+julia> quit()
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ source deactivate
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ cd ngsim_env/julia/test/
+raunakbh@tver:~/ngsim_env/julia/test$ julia runtests.jl 
+WARNING: No working GUI backend found for matplotlib
+WARNING: Method definition reset(AutoEnvs.Env) in module AutoEnvs at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:17 overwritten at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:18.
+  0.010617 seconds (3.96 k allocations: 225.991 KiB)
+ERROR: LoadError: LoadError: SystemError: opening file /home/raunakbh/.julia/v0.6/NGSIM/data/trajdata_i101_trajectories-0750am-0805am.txt: No such file or directory
+Stacktrace:
+ [1] #systemerror#44 at ./error.jl:64 [inlined]
+ [2] systemerror(::String, ::Bool) at ./error.jl:64
+ [3] open(::String, ::Bool, ::Bool, ::Bool, ::Bool, ::Bool) at ./iostream.jl:104
+ [4] open(::String, ::String) at ./iostream.jl:132
+ [5] open(::NGSIM.##38#39, ::String, ::String) at ./iostream.jl:150
+ [6] load_trajdata at /home/raunakbh/.julia/v0.6/NGSIM/src/trajdata.jl:222 [inlined]
+ [7] #index_ngsim_trajectory#3(::Int64, ::Int64, ::Int64, ::Function, ::String) at /home/raunakbh/ngsim_env/julia/AutoEnvs/ngsim_utils.jl:33
+ [8] (::AutoEnvs.#kw##index_ngsim_trajectory)(::Array{Any,1}, ::AutoEnvs.#index_ngsim_trajectory, ::String) at ./<missing>:0
+ [9] test_index_ngsim_trajectory() at /home/raunakbh/ngsim_env/julia/test/test_ngsim_utils.jl:6
+ [10] include_from_node1(::String) at ./loading.jl:576
+ [11] include(::String) at ./sysimg.jl:14
+ [12] runtests() at /home/raunakbh/ngsim_env/julia/test/runtests.jl:6
+ [13] include_from_node1(::String) at ./loading.jl:576
+ [14] include(::String) at ./sysimg.jl:14
+ [15] process_options(::Base.JLOptions) at ./client.jl:305
+ [16] _start() at ./client.jl:371
+while loading /home/raunakbh/ngsim_env/julia/test/test_ngsim_utils.jl, in expression starting on line 237
+while loading /home/raunakbh/ngsim_env/julia/test/runtests.jl, in expression starting on line 237
+raunakbh@tver:~/ngsim_env/julia/test$ cs ../../..
+The program 'cs' is currently not installed. To run 'cs' please ask your administrator to install the package 'csound'
+raunakbh@tver:~/ngsim_env/julia/test$ 
+raunakbh@tver:~/ngsim_env/julia/test$ 
+raunakbh@tver:~/ngsim_env/julia/test$ cs ../../..
+The program 'cs' is currently not installed. To run 'cs' please ask your administrator to install the package 'csound'
+raunakbh@tver:~/ngsim_env/julia/test$ cd ../../..
+raunakbh@tver:~$ 
+raunakbh@tver:~$ source activate rllab3
+(rllab3) raunakbh@tver:~$ cd ngsim_env/python/
+(rllab3) raunakbh@tver:~/ngsim_env/python$ python setup.py develop
+running develop
+running egg_info
+creating julia_env.egg-info
+writing top-level names to julia_env.egg-info/top_level.txt
+writing dependency_links to julia_env.egg-info/dependency_links.txt
+writing julia_env.egg-info/PKG-INFO
+writing requirements to julia_env.egg-info/requires.txt
+writing manifest file 'julia_env.egg-info/SOURCES.txt'
+reading manifest file 'julia_env.egg-info/SOURCES.txt'
+writing manifest file 'julia_env.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/julia-env.egg-link (link to .)
+Adding julia-env 0.1 to easy-install.pth file
+
+Installed /home/raunakbh/ngsim_env/python
+Processing dependencies for julia-env==0.1
+Searching for numpy==1.14.0
+Best match: numpy 1.14.0
+Adding numpy 1.14.0 to easy-install.pth file
+
+Using /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Finished processing dependencies for julia-env==0.1
+(rllab3) raunakbh@tver:~/ngsim_env/python$ pip install julia
+Collecting julia
+  Downloading julia-0.1.5-py2.py3-none-any.whl (222kB)
+    100% |████████████████████████████████| 225kB 3.5MB/s 
+Installing collected packages: julia
+Successfully installed julia-0.1.5
+(rllab3) raunakbh@tver:~/ngsim_env/python$ cd tests/
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ python runtests.py 
+/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+test_julia_env (test_julia_env.TestJuliaEnv) ... 
+signal (11): Segmentation fault
+while loading no file, in expression starting on line 0
+PyDict_SetItem at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/dictobject.c:1209
+PyDict_SetItemString at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/dictobject.c:2839
+init_locale at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/python2.7/lib-dynload/_locale.so (unknown line)
+_PyImport_LoadDynamicModule at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f2d106740f2)
+unknown function (ip: 0x7f2d10674347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f2d10657aa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_CallObjectWithKeywords at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCode at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ExecCodeModuleEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f2d1067346c)
+unknown function (ip: 0x7f2d106740f2)
+unknown function (ip: 0x7f2d10674347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f2d10657aa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_CallObjectWithKeywords at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCode at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ExecCodeModuleEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f2d1067346c)
+unknown function (ip: 0x7f2d106740f2)
+unknown function (ip: 0x7f2d10674347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f2d10657aa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f2d105c785b)
+PyObject_CallFunction at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_Import at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ImportModule at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f2d1067e630)
+Py_InitializeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+__init__ at /home/raunakbh/.julia/v0.6/PyCall/src/pyinit.jl:42
+unknown function (ip: 0x7f2dbcd734af)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1424 [inlined]
+jl_module_run_initializer at /buildworker/worker/package_linux64/build/src/toplevel.c:87
+jl_init_restored_modules at /buildworker/worker/package_linux64/build/src/dump.c:2443 [inlined]
+_jl_restore_incremental at /buildworker/worker/package_linux64/build/src/dump.c:3318
+jl_restore_incremental at /buildworker/worker/package_linux64/build/src/dump.c:3338
+_include_from_serialized at ./loading.jl:157
+_require_from_serialized at ./loading.jl:200
+unknown function (ip: 0x7f2dbf54cce0)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+_require_search_from_serialized at ./loading.jl:236
+unknown function (ip: 0x7f2dbf54d4d0)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+_require at ./loading.jl:441
+require at ./loading.jl:405
+unknown function (ip: 0x7f2dbf54ed4b)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1424 [inlined]
+eval_import_path_ at /buildworker/worker/package_linux64/build/src/toplevel.c:403
+eval_import_path at /buildworker/worker/package_linux64/build/src/toplevel.c:430 [inlined]
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:495
+jl_eval_string at /buildworker/worker/package_linux64/build/src/jlapi.c:77
+unknown function (ip: 0x7f2de2f9136f)
+ffi_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/libffi/src/x86/ffi64.c:525
+_call_function_pointer at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/callproc.c:811 [inlined]
+_ctypes_callproc at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/callproc.c:1149
+PyCFuncPtr_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/_ctypes.c:3856
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_init at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6268
+type_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:905
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_init at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6268
+type_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:905
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+PyEval_EvalCode at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:777
+run_mod at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:976 [inlined]
+PyRun_FileExFlags at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:929
+PyRun_SimpleFileExFlags at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:396
+run_file at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/main.c:318 [inlined]
+Py_Main at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/main.c:769
+main at python (unknown line)
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4008b8)
+Allocations: 2629847 (Pool: 2628615; Big: 1232); GC: 3
+Segmentation fault (core dumped)
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ python runtests.py 
+/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+test_julia_env (test_julia_env.TestJuliaEnv) ... 
+signal (11): Segmentation fault
+while loading no file, in expression starting on line 0
+PyDict_SetItem at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/dictobject.c:1209
+PyDict_SetItemString at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/dictobject.c:2839
+init_locale at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/python2.7/lib-dynload/_locale.so (unknown line)
+_PyImport_LoadDynamicModule at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7ffa2bce10f2)
+unknown function (ip: 0x7ffa2bce1347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7ffa2bcc4aa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_CallObjectWithKeywords at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCode at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ExecCodeModuleEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7ffa2bce046c)
+unknown function (ip: 0x7ffa2bce10f2)
+unknown function (ip: 0x7ffa2bce1347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7ffa2bcc4aa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_CallObjectWithKeywords at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCode at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ExecCodeModuleEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7ffa2bce046c)
+unknown function (ip: 0x7ffa2bce10f2)
+unknown function (ip: 0x7ffa2bce1347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7ffa2bcc4aa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7ffa2bc3485b)
+PyObject_CallFunction at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_Import at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ImportModule at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7ffa2bceb630)
+Py_InitializeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+__init__ at /home/raunakbh/.julia/v0.6/PyCall/src/pyinit.jl:42
+unknown function (ip: 0x7ffa302cfcff)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1424 [inlined]
+jl_module_run_initializer at /buildworker/worker/package_linux64/build/src/toplevel.c:87
+jl_init_restored_modules at /buildworker/worker/package_linux64/build/src/dump.c:2443 [inlined]
+_jl_restore_incremental at /buildworker/worker/package_linux64/build/src/dump.c:3318
+jl_restore_incremental at /buildworker/worker/package_linux64/build/src/dump.c:3338
+_include_from_serialized at ./loading.jl:157
+_require_from_serialized at ./loading.jl:200
+unknown function (ip: 0x7ffad28f5ce0)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+_require_search_from_serialized at ./loading.jl:236
+unknown function (ip: 0x7ffad28f64d0)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+_require at ./loading.jl:441
+require at ./loading.jl:405
+unknown function (ip: 0x7ffad28f7d4b)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1424 [inlined]
+eval_import_path_ at /buildworker/worker/package_linux64/build/src/toplevel.c:403
+eval_import_path at /buildworker/worker/package_linux64/build/src/toplevel.c:430 [inlined]
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:495
+jl_eval_string at /buildworker/worker/package_linux64/build/src/jlapi.c:77
+unknown function (ip: 0x7ffafc23e36f)
+ffi_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/libffi/src/x86/ffi64.c:525
+_call_function_pointer at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/callproc.c:811 [inlined]
+_ctypes_callproc at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/callproc.c:1149
+PyCFuncPtr_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/_ctypes.c:3856
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_init at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6268
+type_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:905
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_init at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6268
+type_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:905
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+PyEval_EvalCode at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:777
+run_mod at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:976 [inlined]
+PyRun_FileExFlags at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:929
+PyRun_SimpleFileExFlags at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:396
+run_file at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/main.c:318 [inlined]
+Py_Main at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/main.c:769
+main at python (unknown line)
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4008b8)
+Allocations: 2622805 (Pool: 2621567; Big: 1238); GC: 3
+Segmentation fault (core dumped)
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+

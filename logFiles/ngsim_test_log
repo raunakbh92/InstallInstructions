@@ -1,0 +1,1458 @@
+raunak@bombay:~$ ssh raunakbh@tver
+raunakbh@tver's password: 
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-109-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+1 package can be updated.
+0 updates are security updates.
+
+
+*** System restart required ***
+Last login: Thu Jan 25 16:56:26 2018 from 171.64.160.60
+raunakbh@tver:~$ ls
+hgail  julia-d386e40c17  miniconda3  ngsim_env  rllab
+raunakbh@tver:~$ 
+raunakbh@tver:~$ source activate rllab3
+(rllab3) raunakbh@tver:~$ cd ngsim_env/python/
+(rllab3) raunakbh@tver:~/ngsim_env/python$ cd tests/
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ python runtests.py 
+/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+test_julia_env (test_julia_env.TestJuliaEnv) ... 
+signal (11): Segmentation fault
+while loading no file, in expression starting on line 0
+PyDict_SetItem at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/dictobject.c:1209
+PyDict_SetItemString at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/dictobject.c:2839
+init_locale at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/python2.7/lib-dynload/_locale.so (unknown line)
+_PyImport_LoadDynamicModule at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f0d07c8a0f2)
+unknown function (ip: 0x7f0d07c8a347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f0d07c6daa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_CallObjectWithKeywords at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCode at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ExecCodeModuleEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f0d07c8946c)
+unknown function (ip: 0x7f0d07c8a0f2)
+unknown function (ip: 0x7f0d07c8a347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f0d07c6daa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_CallObjectWithKeywords at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCode at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ExecCodeModuleEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f0d07c8946c)
+unknown function (ip: 0x7f0d07c8a0f2)
+unknown function (ip: 0x7f0d07c8a347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f0d07c6daa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f0d07bdd85b)
+PyObject_CallFunction at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_Import at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ImportModule at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7f0d07c94630)
+Py_InitializeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+__init__ at /home/raunakbh/.julia/v0.6/PyCall/src/pyinit.jl:42
+unknown function (ip: 0x7f0d87a61d4f)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1424 [inlined]
+jl_module_run_initializer at /buildworker/worker/package_linux64/build/src/toplevel.c:87
+jl_init_restored_modules at /buildworker/worker/package_linux64/build/src/dump.c:2443 [inlined]
+_jl_restore_incremental at /buildworker/worker/package_linux64/build/src/dump.c:3318
+jl_restore_incremental at /buildworker/worker/package_linux64/build/src/dump.c:3338
+_include_from_serialized at ./loading.jl:157
+_require_from_serialized at ./loading.jl:200
+unknown function (ip: 0x7f0d30f64ce0)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+_require_search_from_serialized at ./loading.jl:236
+unknown function (ip: 0x7f0d30f654d0)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+_require at ./loading.jl:441
+require at ./loading.jl:405
+unknown function (ip: 0x7f0d30f66d4b)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1424 [inlined]
+eval_import_path_ at /buildworker/worker/package_linux64/build/src/toplevel.c:403
+eval_import_path at /buildworker/worker/package_linux64/build/src/toplevel.c:430 [inlined]
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:495
+jl_eval_string at /buildworker/worker/package_linux64/build/src/jlapi.c:77
+unknown function (ip: 0x7f0dd8b8c36f)
+ffi_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/libffi/src/x86/ffi64.c:525
+_call_function_pointer at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/callproc.c:811 [inlined]
+_ctypes_callproc at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/callproc.c:1149
+PyCFuncPtr_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/_ctypes.c:3856
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_init at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6268
+type_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:905
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_init at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6268
+type_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:905
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+ext_do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:5034 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3275
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6053
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+PyEval_EvalCode at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:777
+run_mod at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:976 [inlined]
+PyRun_FileExFlags at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:929
+PyRun_SimpleFileExFlags at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:396
+run_file at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/main.c:318 [inlined]
+Py_Main at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/main.c:769
+main at python (unknown line)
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4008b8)
+Allocations: 2622803 (Pool: 2621566; Big: 1237); GC: 3
+Segmentation fault (core dumped)
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ cd ~
+(rllab3) raunakbh@tver:~$ ls
+hgail  julia-d386e40c17  miniconda3  ngsim_env  rllab
+(rllab3) raunakbh@tver:~$ cd ngsim_env/scripts/
+(rllab3) raunakbh@tver:~/ngsim_env/scripts$ 
+(rllab3) raunakbh@tver:~/ngsim_env/scripts$ ls
+create_debug_ngsim_trajdata.py   imitation                           setup_linux.sh
+data_generation                  inspect_ngsim_demonstrations.ipynb
+extract_ngsim_demonstrations.jl  README.md
+(rllab3) raunakbh@tver:~/ngsim_env/scripts$ cd imitation/
+(rllab3) raunakbh@tver:~/ngsim_env/scripts/imitation$ 
+(rllab3) raunakbh@tver:~/ngsim_env/scripts/imitation$ python imitate
+python: can't open file 'imitate': [Errno 2] No such file or directory
+(rllab3) raunakbh@tver:~/ngsim_env/scripts/imitation$ py
+py3clean               pylupdate5             python3.5m
+py3compile             pyrcc5                 python3.5m-config
+py3versions            pyrsa-decrypt          python3.6
+pybuild                pyrsa-decrypt-bigfile  python3.6-config
+pycc                   pyrsa-encrypt          python3.6m
+pyclean                pyrsa-encrypt-bigfile  python3.6m-config
+pycompile              pyrsa-keygen           python3-config
+pydoc                  pyrsa-priv2pub         python3m
+pydoc2.7               pyrsa-sign             python3m-config
+pydoc3                 pyrsa-verify           pythontex
+pydoc3.5               pytest                 pythontex3
+pydoc3.6               py.test                pyuic5
+pygettext              python                 pyvenv
+pygettext2.7           python2                pyvenv-3.5
+pygettext3             python2.7              pyvenv-3.6
+pygettext3.5           python3                pyversions
+pygmentex              python3.5              
+pygmentize             python3.5-config       
+(rllab3) raunakbh@tver:~/ngsim_env/scripts/imitation$ python imitate.py 
+/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+signal (11): Segmentation fault
+while loading no file, in expression starting on line 0
+PyDict_SetItem at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/dictobject.c:1209
+PyDict_SetItemString at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/dictobject.c:2839
+init_locale at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/python2.7/lib-dynload/_locale.so (unknown line)
+_PyImport_LoadDynamicModule at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7fd4b5ba90f2)
+unknown function (ip: 0x7fd4b5ba9347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7fd4b5b8caa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_CallObjectWithKeywords at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCode at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ExecCodeModuleEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7fd4b5ba846c)
+unknown function (ip: 0x7fd4b5ba90f2)
+unknown function (ip: 0x7fd4b5ba9347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7fd4b5b8caa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_CallObjectWithKeywords at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalFrameEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCodeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyEval_EvalCode at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ExecCodeModuleEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7fd4b5ba846c)
+unknown function (ip: 0x7fd4b5ba90f2)
+unknown function (ip: 0x7fd4b5ba9347)
+PyImport_ImportModuleLevel at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7fd4b5b8caa5)
+PyObject_Call at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7fd4b5afc85b)
+PyObject_CallFunction at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_Import at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+PyImport_ImportModule at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+unknown function (ip: 0x7fd4b5bb3630)
+Py_InitializeEx at /home/raunakbh/.julia/v0.6/Conda/deps/usr/lib/libpython2.7.so (unknown line)
+__init__ at /home/raunakbh/.julia/v0.6/PyCall/src/pyinit.jl:42
+unknown function (ip: 0x7fd4f000bc7f)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1424 [inlined]
+jl_module_run_initializer at /buildworker/worker/package_linux64/build/src/toplevel.c:87
+jl_init_restored_modules at /buildworker/worker/package_linux64/build/src/dump.c:2443 [inlined]
+_jl_restore_incremental at /buildworker/worker/package_linux64/build/src/dump.c:3318
+jl_restore_incremental at /buildworker/worker/package_linux64/build/src/dump.c:3338
+_include_from_serialized at ./loading.jl:157
+_require_from_serialized at ./loading.jl:200
+unknown function (ip: 0x7fd4ea017ce0)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+_require_search_from_serialized at ./loading.jl:236
+unknown function (ip: 0x7fd4ea0184d0)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+_require at ./loading.jl:441
+require at ./loading.jl:405
+unknown function (ip: 0x7fd4ea019d4b)
+jl_call_fptr_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /buildworker/worker/package_linux64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:1926
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1424 [inlined]
+eval_import_path_ at /buildworker/worker/package_linux64/build/src/toplevel.c:403
+eval_import_path at /buildworker/worker/package_linux64/build/src/toplevel.c:430 [inlined]
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:495
+jl_eval_string at /buildworker/worker/package_linux64/build/src/jlapi.c:77
+unknown function (ip: 0x7fd503eb936f)
+ffi_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/libffi/src/x86/ffi64.c:525
+_call_function_pointer at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/callproc.c:811 [inlined]
+_ctypes_callproc at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/callproc.c:1149
+PyCFuncPtr_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/_ctypes/_ctypes.c:3856
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4803 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_init at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6268
+type_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:905
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+function_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/funcobject.c:627
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+method_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/classobject.c:330
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+slot_tp_init at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:6268
+type_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/typeobject.c:905
+PyObject_Call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Objects/abstract.c:2165
+do_call at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4936 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4732 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+fast_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4813 [inlined]
+call_function at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4730 [inlined]
+PyEval_EvalFrameEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:3236
+_PyEval_EvalCodeWithName at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4018
+PyEval_EvalCodeEx at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:4039
+PyEval_EvalCode at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/ceval.c:777
+run_mod at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:976 [inlined]
+PyRun_FileExFlags at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:929
+PyRun_SimpleFileExFlags at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Python/pythonrun.c:396
+run_file at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/main.c:318 [inlined]
+Py_Main at /home/ilan/minonda/conda-bld/work/Python-3.5.2/Modules/main.c:769
+main at python (unknown line)
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4008b8)
+Allocations: 2622805 (Pool: 2621568; Big: 1237); GC: 3
+Segmentation fault (core dumped)
+(rllab3) raunakbh@tver:~/ngsim_env/scripts/imitation$ cd ~
+(rllab3) raunakbh@tver:~$ ls julia-d386e40c17/
+bin/        etc/        include/    lib/        LICENSE.md  share/      
+(rllab3) raunakbh@tver:~$ ls julia-d386e40c17/
+bin/        etc/        include/    lib/        LICENSE.md  share/      
+(rllab3) raunakbh@tver:~$ find / -iname 'juliarc.jl' -print
+find: ‘/etc/ssl/private’: Permission denied
+find: ‘/etc/polkit-1/localauthority’: Permission denied
+find: ‘/tmp/systemd-private-237459ede7a642d1bf43dbc4ed10c837-systemd-timesyncd.service-rLqPot’: Permission denied
+find: ‘/tmp/tmux-1001’: Permission denied
+find: ‘/lost+found’: Permission denied
+find: ‘/home/sisladmin/.emacs.d’: Permission denied
+find: ‘/home/sisladmin/.config’: Permission denied
+find: ‘/home/sisladmin/.cache’: Permission denied
+find: ‘/home/sisladmin/.ssh’: Permission denied
+find: ‘/home/sisladmin/.local’: Permission denied
+find: ‘/home/lost+found’: Permission denied
+find: ‘/home/rtompa2/.config’: Permission denied
+find: ‘/home/rtompa2/.cache’: Permission denied
+find: ‘/home/akuefler/.cache’: Permission denied
+find: ‘/home/akuefler/.local’: Permission denied
+find: ‘/home/prosello/.cache’: Permission denied
+find: ‘/home/dressel/.cache’: Permission denied
+find: ‘/home/dressel/.ssh’: Permission denied
+^Z
+[1]+  Stopped                 find / -iname 'juliarc.jl' -print
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ find . -iname 'juliarc.jl' -print
+./julia-d386e40c17/etc/julia/juliarc.jl
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ vi ./julia-d386e40c17/etc/julia/juliarc.jl 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ source deactivate
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ ls
+hgail  julia-d386e40c17  miniconda3  ngsim_env  rllab
+raunakbh@tver:~$ 
+raunakbh@tver:~$ source activate rllab3
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ cd ngsim_env/python/
+(rllab3) raunakbh@tver:~/ngsim_env/python$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python$ cd tests/
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ vi runtests.py 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ cd ~/julia-d386e40c17/lib/
+(rllab3) raunakbh@tver:~/julia-d386e40c17/lib$ 
+(rllab3) raunakbh@tver:~/julia-d386e40c17/lib$ ls
+julia              libjulia-debug.so.0.6    libjulia.so      libjulia.so.0.6.2
+libjulia-debug.so  libjulia-debug.so.0.6.2  libjulia.so.0.6
+(rllab3) raunakbh@tver:~/julia-d386e40c17/lib$ 
+(rllab3) raunakbh@tver:~/julia-d386e40c17/lib$ 
+(rllab3) raunakbh@tver:~/julia-d386e40c17/lib$ 
+(rllab3) raunakbh@tver:~/julia-d386e40c17/lib$ 
+(rllab3) raunakbh@tver:~/julia-d386e40c17/lib$ cd ~/ngsim_env/python/
+(rllab3) raunakbh@tver:~/ngsim_env/python$ ls
+julia_env  julia_env.egg-info  perf  README.md  setup.py  tests
+(rllab3) raunakbh@tver:~/ngsim_env/python$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python$ cd tests/
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ ls
+__pycache__  test_julia_env.py             test_ngsim_env.py
+runtests.py  test_multiagent_ngsim_env.py  test_vectorized_ngsim_env.py
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ find . -iname 'PyCall,jl'
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ find . -iname 'PyCall.jl' -print
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ cd ~
+(rllab3) raunakbh@tver:~$ \
+> 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ cd ~
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ ls
+hgail  julia-d386e40c17  miniconda3  ngsim_env  rllab
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ find . -inmae 'PyCall.jl' -print
+find: unknown predicate `-inmae'
+(rllab3) raunakbh@tver:~$ find . -iname 'PyCall.jl' -print
+./.julia/v0.6/PyCall/src/PyCall.jl
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ ls
+hgail  julia-d386e40c17  miniconda3  ngsim_env  rllab
+(rllab3) raunakbh@tver:~$ cd .
+(rllab3) raunakbh@tver:~$ ls
+hgail  julia-d386e40c17  miniconda3  ngsim_env  rllab
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ cd .julia/lib/
+(rllab3) raunakbh@tver:~/.julia/lib$ 
+(rllab3) raunakbh@tver:~/.julia/lib$ ls
+pyjulia3-v0.6  v0.6
+(rllab3) raunakbh@tver:~/.julia/lib$ 
+(rllab3) raunakbh@tver:~/.julia/lib$ 
+(rllab3) raunakbh@tver:~/.julia/lib$ 
+(rllab3) raunakbh@tver:~/.julia/lib$ cd v0.6/
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ ls
+AutoEnvs.ji                 DataFrames.ji          LegacyStrings.ji  Reexport.ji
+AutomotiveDrivingModels.ji  DataStructures.ji      LightGraphs.ji    Rmath.ji
+AutoRisk.ji                 Discretizers.ji        LightXML.ji       SHA.ji
+AutoViz.ji                  Distributions.ji       MacroTools.ji     SimpleTraits.ji
+BayesNets.ji                FileIO.ji              NaNMath.ji        SortingAlgorithms.ji
+BinDeps.ji                  FixedPointNumbers.ji   NGSIM.ji          SpecialFunctions.ji
+Blosc.ji                    Graphics.ji            Nullables.ji      StatsBase.ji
+Cairo.ji                    GridInterpolations.ji  Parameters.ji     StatsFuns.ji
+CodecZlib.ji                GZip.ji                PDMats.ji         TikzGraphs.ji
+Colors.ji                   HDF5.ji                PyCall.ji         TikzPictures.ji
+ColorTypes.ji               Iterators.ji           PyPlot.ji         TranscodingStreams.ji
+Compat.ji                   JLD.ji                 QuadGK.ji         URIParser.ji
+Conda.ji                    JSON.ji                Records.ji        Vec.ji
+DataArrays.ji               LaTeXStrings.ji        Reel.ji
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ rm PyCall.ji
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ 
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ 
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ 
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ python
+Python 3.5.2 |Continuum Analytics, Inc.| (default, Jul  2 2016, 17:53:06) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import julia
+>>> 
+>>> 
+>>> quit(
+... 
+... 
+... 
+... )
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ 
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ 
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ 
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ 
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ 
+(rllab3) raunakbh@tver:~/.julia/lib/v0.6$ cd ~/ngsim_env/python/
+(rllab3) raunakbh@tver:~/ngsim_env/python$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python$ python setup.py develop
+running develop
+running egg_info
+writing dependency_links to julia_env.egg-info/dependency_links.txt
+writing top-level names to julia_env.egg-info/top_level.txt
+writing julia_env.egg-info/PKG-INFO
+writing requirements to julia_env.egg-info/requires.txt
+reading manifest file 'julia_env.egg-info/SOURCES.txt'
+writing manifest file 'julia_env.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/julia-env.egg-link (link to .)
+julia-env 0.1 is already the active version in easy-install.pth
+
+Installed /home/raunakbh/ngsim_env/python
+Processing dependencies for julia-env==0.1
+Searching for numpy==1.14.0
+Best match: numpy 1.14.0
+Adding numpy 1.14.0 to easy-install.pth file
+
+Using /home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages
+Finished processing dependencies for julia-env==0.1
+(rllab3) raunakbh@tver:~/ngsim_env/python$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python$ cd tests/
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ python runtests.py 
+/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+test_julia_env (test_julia_env.TestJuliaEnv) ... WARNING: imported binding for Iterators overwritten in module Main
+WARNING: No working GUI backend found for matplotlib
+WARNING: No working GUI backend found for matplotlib
+WARNING: Method definition reset(AutoEnvs.Env) in module AutoEnvs at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:17 overwritten at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:18.
+WARNING: Method definition reset(AutoEnvs.Env) in module AutoEnvs at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:17 overwritten at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:18.
+ok
+frame 9036 / 9036delete vehid 117 for below minlengthTestMultiagentNGSIMEnv) ... 
+delete vehid 2951 for below minlength
+delete vehid 79 for below minlength
+delete vehid 71 for below minlength
+delete vehid 95 for below minlength
+delete vehid 90 for below minlength
+delete vehid 14 for below minlength
+delete vehid 135 for below minlength
+delete vehid 125 for below minlength
+delete vehid 99 for below minlength
+delete vehid 128 for below minlength
+delete vehid 183 for below minlength
+delete vehid 3022 for below minlength
+delete vehid 2947 for below minlength
+delete vehid 279 for below minlength
+delete vehid 94 for below minlength
+delete vehid 115 for below minlength
+delete vehid 97 for below minlength
+delete vehid 39 for below minlength
+delete vehid 82 for below minlength
+delete vehid 75 for below minlength
+delete vehid 389 for below minlength
+delete vehid 73 for below minlength
+delete vehid 119 for below minlength
+delete vehid 3030 for below minlength
+delete vehid 27 for below minlength
+delete vehid 131 for below minlength
+delete vehid 31 for below minlength
+delete vehid 33 for below minlength
+delete vehid 2345 for below minlength
+delete vehid 120 for below minlength
+delete vehid 62 for below minlength
+delete vehid 55 for below minlength
+delete vehid 44 for below minlength
+delete vehid 105 for below minlength
+delete vehid 118 for below minlength
+delete vehid 100 for below minlength
+delete vehid 2927 for below minlength
+delete vehid 3025 for below minlength
+delete vehid 3033 for below minlength
+delete vehid 54 for below minlength
+delete vehid 60 for below minlength
+delete vehid 34 for below minlength
+delete vehid 72 for below minlength
+delete vehid 83 for below minlength
+delete vehid 3034 for below minlength
+delete vehid 23 for below minlength
+delete vehid 57 for below minlength
+delete vehid 3002 for below minlength
+delete vehid 96 for below minlength
+delete vehid 49 for below minlength
+delete vehid 153 for below minlength
+delete vehid 2963 for below minlength
+delete vehid 63 for below minlength
+delete vehid 37 for below minlength
+delete vehid 47 for below minlength
+delete vehid 91 for below minlength
+delete vehid 2955 for below minlength
+delete vehid 51 for below minlength
+delete vehid 78 for below minlength
+delete vehid 124 for below minlength
+delete vehid 25 for below minlength
+delete vehid 64 for below minlength
+delete vehid 67 for below minlength
+delete vehid 174 for below minlength
+delete vehid 116 for below minlength
+delete vehid 3000 for below minlength
+delete vehid 56 for below minlength
+delete vehid 2493 for below minlength
+delete vehid 114 for below minlength
+delete vehid 84 for below minlength
+delete vehid 3026 for below minlength
+delete vehid 77 for below minlength
+delete vehid 76 for below minlength
+delete vehid 122 for below minlength
+delete vehid 2990 for below minlength
+delete vehid 127 for below minlength
+delete vehid 43 for below minlength
+delete vehid 104 for below minlength
+delete vehid 48 for below minlength
+delete vehid 109 for below minlength
+delete vehid 3015 for below minlength
+delete vehid 42 for below minlength
+delete vehid 59 for below minlength
+delete vehid 3021 for below minlength
+delete vehid 69 for below minlength
+delete vehid 32 for below minlength
+delete vehid 1042 for below minlength
+2018-01-26 09:49:23.596439: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-01-26 09:49:23.701745 PST | itr #0 | Obtaining samples...
+2018-01-26 09:49:23.702107 PST | itr #0 | Obtaining samples for iteration 0...
+0% [##############################] 100% | ETA: 00:00:00
+Total time elapsed: 00:00:03
+2018-01-26 09:49:30.277600 PST | itr #0 | Processing samples...
+2018-01-26 09:49:30.279562 PST | itr #0 | fitting baseline...
+2018-01-26 09:49:30.279928 PST | itr #0 | fitted
+2018-01-26 09:49:30.280360 PST | itr #0 | Logging diagnostics...
+2018-01-26 09:49:30.280643 PST | itr #0 | Optimizing policy...
+2018-01-26 09:49:30.280871 PST | itr #0 | Computing loss before
+2018-01-26 09:49:30.298953 PST | itr #0 | Computing KL before
+2018-01-26 09:49:30.313561 PST | itr #0 | Optimizing
+2018-01-26 09:49:30.318831 PST | itr #0 | Start CG optimization: #parameters: 6404, #inputs: 1000, #subsample_inputs: 1000
+2018-01-26 09:49:30.319448 PST | itr #0 | computing loss before
+2018-01-26 09:49:30.321981 PST | itr #0 | performing update
+2018-01-26 09:49:30.322169 PST | itr #0 | computing gradient
+2018-01-26 09:49:30.366953 PST | itr #0 | gradient computed
+2018-01-26 09:49:30.367374 PST | itr #0 | computing descent direction
+2018-01-26 09:49:31.460092 PST | itr #0 | descent direction computed
+2018-01-26 09:49:31.552026 PST | itr #0 | Line search condition violated. Rejecting the step!
+2018-01-26 09:49:31.552420 PST | itr #0 | Violated because loss is NaN
+2018-01-26 09:49:31.552701 PST | itr #0 | Violated because constraint mean_kl is NaN
+2018-01-26 09:49:31.554317 PST | itr #0 | backtrack iters: 14
+2018-01-26 09:49:31.554589 PST | itr #0 | computing loss after
+2018-01-26 09:49:31.554917 PST | itr #0 | optimization finished
+2018-01-26 09:49:31.555238 PST | itr #0 | Computing KL after
+2018-01-26 09:49:31.557013 PST | itr #0 | Computing loss after
+2018-01-26 09:49:31.558165 PST | itr #0 | Saving snapshot...
+2018-01-26 09:49:31.558367 PST | itr #0 | Saved
+2018-01-26 09:49:31.559271 PST | -----------------------  ------------
+2018-01-26 09:49:31.559463 PST | PolicyExecTime            0.177044
+2018-01-26 09:49:31.559631 PST | EnvExecTime               3.65876
+2018-01-26 09:49:31.559793 PST | ProcessExecTime           0.0299249
+2018-01-26 09:49:31.560009 PST | Iteration                 0
+2018-01-26 09:49:31.560286 PST | AverageDiscountedReturn   0
+2018-01-26 09:49:31.560579 PST | AverageReturn             0
+2018-01-26 09:49:31.560859 PST | ExplainedVariance         1
+2018-01-26 09:49:31.561120 PST | NumTrajs                  5
+2018-01-26 09:49:31.561405 PST | Entropy                   2.35895
+2018-01-26 09:49:31.561648 PST | Perplexity               10.5798
+2018-01-26 09:49:31.561929 PST | StdReturn                 0
+2018-01-26 09:49:31.562221 PST | MaxReturn                 0
+2018-01-26 09:49:31.562482 PST | MinReturn                 0
+2018-01-26 09:49:31.562639 PST | AveragePolicyStd          0.930431
+2018-01-26 09:49:31.562802 PST | LossBefore               -0
+2018-01-26 09:49:31.562957 PST | LossAfter                -0
+2018-01-26 09:49:31.563127 PST | MeanKLBefore              5.14789e-10
+2018-01-26 09:49:31.563439 PST | MeanKL                    5.14789e-10
+2018-01-26 09:49:31.563749 PST | dLoss                     0
+2018-01-26 09:49:31.564078 PST | Time                      7.8569
+2018-01-26 09:49:31.564373 PST | ItrTime                   7.8569
+2018-01-26 09:49:31.564674 PST | -----------------------  ------------
+ok
+frame 9516 / 9516delete vehid 3327 for below minlength
+delete vehid 3312 for below minlength
+delete vehid 3317 for below minlength
+ok
+test_vectorized_ngsim_env (test_vectorized_ngsim_env.TestVectorizedNGSIMEnv) ... 2018-01-26 09:49:48.885287 PST | itr #0 | Obtaining samples...
+2018-01-26 09:49:48.885847 PST | itr #0 | Obtaining samples for iteration 0...
+0% [##############################] 100% | ETA: 00:00:00
+Total time elapsed: 00:00:19
+2018-01-26 09:50:08.945684 PST | itr #0 | Processing samples...
+2018-01-26 09:50:09.142873 PST | itr #0 | fitting baseline...
+2018-01-26 09:50:09.500203 PST | itr #0 | trying penalty=1.000...
+Intel MKL FATAL ERROR: Cannot load libmkl_avx2.so or libmkl_def.so.
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ cd ~
+(rllab3) raunakbh@tver:~$ source deactivate
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ conda install nomkl numpy scipt scikit-learn numexpr
+Fetching package metadata ...........
+
+PackageNotFoundError: Packages missing in current channels:
+            
+  - scipt
+
+We have searched for the packages in the following channels:
+            
+  - https://repo.continuum.io/pkgs/main/linux-64
+  - https://repo.continuum.io/pkgs/main/noarch
+  - https://repo.continuum.io/pkgs/free/linux-64
+  - https://repo.continuum.io/pkgs/free/noarch
+  - https://repo.continuum.io/pkgs/r/linux-64
+  - https://repo.continuum.io/pkgs/r/noarch
+  - https://repo.continuum.io/pkgs/pro/linux-64
+  - https://repo.continuum.io/pkgs/pro/noarch
+            
+
+raunakbh@tver:~$ 
+raunakbh@tver:~$ conda install nomkl numpy scipy scikit-learn numexpr
+Fetching package metadata ...........
+Solving package specifications: .
+
+Package plan for installation in environment /home/raunakbh/miniconda3:
+
+The following NEW packages will be INSTALLED:
+
+    libgfortran-ng: 7.2.0-h9f7466a_2           
+    libopenblas:    0.2.20-h9ac9557_4          
+    nomkl:          1.0-0                      
+    numexpr:        2.6.4-py36_nomklh2c28f9d_0  [nomkl]
+    numpy:          1.14.0-py36_nomklh7cdd4dd_0 [nomkl]
+    scikit-learn:   0.19.1-py36_nomklh27f7947_0 [nomkl]
+    scipy:          1.0.0-py36_nomklh9d91e6a_0  [nomkl]
+
+The following packages will be UPDATED:
+
+    conda:          4.3.31-py36_0               --> 4.4.7-py36_0
+
+Proceed ([y]/n)? y
+
+nomkl-1.0-0.ta 100% |###########################################| Time: 0:00:00 582.62 kB/s
+libopenblas-0. 100% |###########################################| Time: 0:00:00  79.27 MB/s
+numpy-1.14.0-p 100% |###########################################| Time: 0:00:00  84.05 MB/s
+numexpr-2.6.4- 100% |###########################################| Time: 0:00:00  78.75 MB/s
+scipy-1.0.0-py 100% |###########################################| Time: 0:00:00  74.51 MB/s
+scikit-learn-0 100% |###########################################| Time: 0:00:00  73.20 MB/s
+conda-4.4.7-py 100% |###########################################| Time: 0:00:00  78.12 MB/s
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ conda remove mkl mkl-service
+Solving environment: failed
+
+PackagesNotFoundError: The following packages are missing from the target environment:
+  - mkl-service
+  - mkl
+
+
+raunakbh@tver:~$ conda remove mkl mkl-service
+Solving environment: failed
+
+PackagesNotFoundError: The following packages are missing from the target environment:
+  - mkl-service
+  - mkl
+
+
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ 
+raunakbh@tver:~$ source activate rllab3
+(rllab3) raunakbh@tver:~$ 
+(rllab3) raunakbh@tver:~$ cd ngsim_env/python/tests/
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ python runtests.py 
+/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+test_julia_env (test_julia_env.TestJuliaEnv) ... WARNING: imported binding for Iterators overwritten in module Main
+WARNING: No working GUI backend found for matplotlib
+WARNING: Method definition reset(AutoEnvs.Env) in module AutoEnvs at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:17 overwritten at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:18.
+ok
+test_multiagent_ngsim_env (test_multiagent_ngsim_env.TestMultiagentNGSIMEnv) ... 2018-01-26 10:24:35.670304: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-01-26 10:24:35.736640 PST | itr #0 | Obtaining samples...
+2018-01-26 10:24:35.736998 PST | itr #0 | Obtaining samples for iteration 0...
+0% [##############################] 100% | ETA: 00:00:00
+Total time elapsed: 00:00:03
+2018-01-26 10:24:42.503625 PST | itr #0 | Processing samples...
+2018-01-26 10:24:42.505016 PST | itr #0 | fitting baseline...
+2018-01-26 10:24:42.505208 PST | itr #0 | fitted
+2018-01-26 10:24:42.505515 PST | itr #0 | Logging diagnostics...
+2018-01-26 10:24:42.505787 PST | itr #0 | Optimizing policy...
+2018-01-26 10:24:42.505991 PST | itr #0 | Computing loss before
+2018-01-26 10:24:42.519397 PST | itr #0 | Computing KL before
+2018-01-26 10:24:42.529954 PST | itr #0 | Optimizing
+2018-01-26 10:24:42.533887 PST | itr #0 | Start CG optimization: #parameters: 6404, #inputs: 1000, #subsample_inputs: 1000
+2018-01-26 10:24:42.534081 PST | itr #0 | computing loss before
+2018-01-26 10:24:42.535235 PST | itr #0 | performing update
+2018-01-26 10:24:42.535423 PST | itr #0 | computing gradient
+2018-01-26 10:24:42.569024 PST | itr #0 | gradient computed
+2018-01-26 10:24:42.569294 PST | itr #0 | computing descent direction
+2018-01-26 10:24:43.556016 PST | itr #0 | descent direction computed
+2018-01-26 10:24:43.667236 PST | itr #0 | Line search condition violated. Rejecting the step!
+2018-01-26 10:24:43.667669 PST | itr #0 | Violated because loss is NaN
+2018-01-26 10:24:43.667995 PST | itr #0 | Violated because constraint mean_kl is NaN
+2018-01-26 10:24:43.669993 PST | itr #0 | backtrack iters: 14
+2018-01-26 10:24:43.670346 PST | itr #0 | computing loss after
+2018-01-26 10:24:43.670646 PST | itr #0 | optimization finished
+2018-01-26 10:24:43.670970 PST | itr #0 | Computing KL after
+2018-01-26 10:24:43.672600 PST | itr #0 | Computing loss after
+2018-01-26 10:24:43.674212 PST | itr #0 | Saving snapshot...
+2018-01-26 10:24:43.674565 PST | itr #0 | Saved
+2018-01-26 10:24:43.676089 PST | -----------------------  ------------
+2018-01-26 10:24:43.676427 PST | PolicyExecTime            0.149423
+2018-01-26 10:24:43.676728 PST | EnvExecTime               3.63756
+2018-01-26 10:24:43.677019 PST | ProcessExecTime           0.025007
+2018-01-26 10:24:43.677308 PST | Iteration                 0
+2018-01-26 10:24:43.677599 PST | AverageDiscountedReturn   0
+2018-01-26 10:24:43.677888 PST | AverageReturn             0
+2018-01-26 10:24:43.678178 PST | ExplainedVariance         1
+2018-01-26 10:24:43.678464 PST | NumTrajs                  5
+2018-01-26 10:24:43.678770 PST | Entropy                   1.09282
+2018-01-26 10:24:43.679059 PST | Perplexity                2.98266
+2018-01-26 10:24:43.679346 PST | StdReturn                 0
+2018-01-26 10:24:43.679634 PST | MaxReturn                 0
+2018-01-26 10:24:43.679922 PST | MinReturn                 0
+2018-01-26 10:24:43.680212 PST | AveragePolicyStd          0.514113
+2018-01-26 10:24:43.680499 PST | LossBefore               -0
+2018-01-26 10:24:43.680786 PST | LossAfter                -0
+2018-01-26 10:24:43.681072 PST | MeanKLBefore              2.10945e-10
+2018-01-26 10:24:43.681356 PST | MeanKL                    2.10945e-10
+2018-01-26 10:24:43.681642 PST | dLoss                     0
+2018-01-26 10:24:43.681928 PST | Time                      7.93833
+2018-01-26 10:24:43.682215 PST | ItrTime                   7.93834
+2018-01-26 10:24:43.682502 PST | -----------------------  ------------
+ok
+test_ngsim_env (test_ngsim_env.TestNGSIMEnv) ... ok
+test_vectorized_ngsim_env (test_vectorized_ngsim_env.TestVectorizedNGSIMEnv) ... 2018-01-26 10:24:55.895734 PST | itr #0 | Obtaining samples...
+2018-01-26 10:24:55.896013 PST | itr #0 | Obtaining samples for iteration 0...
+0% [##############################] 100% | ETA: 00:00:00
+Total time elapsed: 00:00:20
+2018-01-26 10:25:16.919827 PST | itr #0 | Processing samples...
+2018-01-26 10:25:17.092817 PST | itr #0 | fitting baseline...
+2018-01-26 10:25:17.418160 PST | itr #0 | trying penalty=1.000...
+Intel MKL FATAL ERROR: Cannot load libmkl_avx2.so or libmkl_def.so.
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ conda update numpy
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/raunakbh/miniconda3/envs/rllab3
+
+  added / updated specs: 
+    - numpy
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    mkl-2018.0.1               |       h19d6760_4       184.7 MB
+    numpy-1.12.1               |   py35hca0bb5e_1         3.7 MB
+    scipy-1.0.0                |   py35hcbbe4a2_0        17.8 MB
+    certifi-2018.1.18          |           py35_0         143 KB
+    scikit-learn-0.19.1        |   py35hbf1f462_0         5.2 MB
+    ------------------------------------------------------------
+                                           Total:       211.5 MB
+
+The following packages will be UPDATED:
+
+    certifi:      2017.11.5-py35h9749603_0 --> 2018.1.18-py35_0     
+    mkl:          2017.0.4-h4c4d0af_0      --> 2018.0.1-h19d6760_4  
+    numpy:        1.12.0-py35_0            --> 1.12.1-py35hca0bb5e_1
+    scikit-learn: 0.19.0-np112py35_0       --> 0.19.1-py35hbf1f462_0
+    scipy:        0.19.1-np112py35_0       --> 1.0.0-py35hcbbe4a2_0 
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+mkl 2018.0.1: ##################################################################### | 100% 
+numpy 1.12.1: ##################################################################### | 100% 
+scipy 1.0.0: ###################################################################### | 100% 
+certifi 2018.1.18: ################################################################ | 100% 
+scikit-learn 0.19.1: ############################################################## | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ python runtests.py 
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 317, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 317, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 317, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 317, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xa
+test_julia_env (unittest.loader._FailedTest) ... ERROR
+test_multiagent_ngsim_env (unittest.loader._FailedTest) ... ERROR
+test_ngsim_env (unittest.loader._FailedTest) ... ERROR
+test_vectorized_ngsim_env (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_julia_env (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_julia_env
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 317, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/raunakbh/ngsim_env/python/tests/test_julia_env.py", line 4, in <module>
+    from julia_env.julia_env import JuliaEnv
+  File "/home/raunakbh/ngsim_env/python/julia_env/julia_env.py", line 5, in <module>
+    from rllab.envs.base import Env
+  File "/home/raunakbh/rllab/rllab/envs/base.py", line 1, in <module>
+    from .env_spec import EnvSpec
+  File "/home/raunakbh/rllab/rllab/envs/env_spec.py", line 2, in <module>
+    from rllab.spaces.base import Space
+  File "/home/raunakbh/rllab/rllab/spaces/__init__.py", line 2, in <module>
+    from .discrete import Discrete
+  File "/home/raunakbh/rllab/rllab/spaces/discrete.py", line 3, in <module>
+    from rllab.misc import special
+  File "/home/raunakbh/rllab/rllab/misc/special.py", line 4, in <module>
+    import theano.tensor.nnet
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/__init__.py", line 83, in <module>
+    from theano.scan_module import scan, map, reduce, foldl, foldr, clone
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/scan_module/__init__.py", line 41, in <module>
+    from theano.scan_module import scan_opt
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/scan_module/scan_opt.py", line 59, in <module>
+    from theano import tensor, scalar
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/tensor/__init__.py", line 9, in <module>
+    from theano.tensor.subtensor import *
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/tensor/subtensor.py", line 28, in <module>
+    import theano.gof.cutils  # needed to import cutils_ext
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 320, in <module>
+    compile_cutils()
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 285, in compile_cutils
+    preargs=args)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cmodule.py", line 2291, in compile_str
+    return dlimport(lib_filename)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cmodule.py", line 302, in dlimport
+    rval = __import__(module_name, {}, {}, [module_name])
+ImportError: numpy.core.multiarray failed to import
+
+
+======================================================================
+ERROR: test_multiagent_ngsim_env (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_multiagent_ngsim_env
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 317, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/raunakbh/ngsim_env/python/tests/test_multiagent_ngsim_env.py", line 9, in <module>
+    from sandbox.rocky.tf.algos.trpo import TRPO
+  File "/home/raunakbh/rllab/sandbox/rocky/tf/algos/trpo.py", line 3, in <module>
+    from sandbox.rocky.tf.algos.npo import NPO
+  File "/home/raunakbh/rllab/sandbox/rocky/tf/algos/npo.py", line 8, in <module>
+    from sandbox.rocky.tf.algos.batch_polopt import BatchPolopt
+  File "/home/raunakbh/rllab/sandbox/rocky/tf/algos/batch_polopt.py", line 6, in <module>
+    from sandbox.rocky.tf.samplers.batch_sampler import BatchSampler
+  File "/home/raunakbh/rllab/sandbox/rocky/tf/samplers/batch_sampler.py", line 1, in <module>
+    from rllab.sampler.base import BaseSampler
+  File "/home/raunakbh/rllab/rllab/sampler/base.py", line 4, in <module>
+    from rllab.misc import special
+  File "/home/raunakbh/rllab/rllab/misc/special.py", line 4, in <module>
+    import theano.tensor.nnet
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/__init__.py", line 83, in <module>
+    from theano.scan_module import scan, map, reduce, foldl, foldr, clone
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/scan_module/__init__.py", line 41, in <module>
+    from theano.scan_module import scan_opt
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/scan_module/scan_opt.py", line 59, in <module>
+    from theano import tensor, scalar
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/tensor/__init__.py", line 9, in <module>
+    from theano.tensor.subtensor import *
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/tensor/subtensor.py", line 28, in <module>
+    import theano.gof.cutils  # needed to import cutils_ext
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 320, in <module>
+    compile_cutils()
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 285, in compile_cutils
+    preargs=args)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cmodule.py", line 2291, in compile_str
+    return dlimport(lib_filename)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cmodule.py", line 302, in dlimport
+    rval = __import__(module_name, {}, {}, [module_name])
+ImportError: numpy.core.multiarray failed to import
+
+
+======================================================================
+ERROR: test_ngsim_env (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_ngsim_env
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 317, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/raunakbh/ngsim_env/python/tests/test_ngsim_env.py", line 6, in <module>
+    from julia_env.julia_env import JuliaEnv
+  File "/home/raunakbh/ngsim_env/python/julia_env/julia_env.py", line 7, in <module>
+    from julia_env.utils import build_space
+  File "/home/raunakbh/ngsim_env/python/julia_env/utils.py", line 3, in <module>
+    import rllab.spaces
+  File "/home/raunakbh/rllab/rllab/spaces/__init__.py", line 2, in <module>
+    from .discrete import Discrete
+  File "/home/raunakbh/rllab/rllab/spaces/discrete.py", line 3, in <module>
+    from rllab.misc import special
+  File "/home/raunakbh/rllab/rllab/misc/special.py", line 4, in <module>
+    import theano.tensor.nnet
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/__init__.py", line 83, in <module>
+    from theano.scan_module import scan, map, reduce, foldl, foldr, clone
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/scan_module/__init__.py", line 41, in <module>
+    from theano.scan_module import scan_opt
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/scan_module/scan_opt.py", line 59, in <module>
+    from theano import tensor, scalar
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/tensor/__init__.py", line 9, in <module>
+    from theano.tensor.subtensor import *
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/tensor/subtensor.py", line 28, in <module>
+    import theano.gof.cutils  # needed to import cutils_ext
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 320, in <module>
+    compile_cutils()
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 285, in compile_cutils
+    preargs=args)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cmodule.py", line 2291, in compile_str
+    return dlimport(lib_filename)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cmodule.py", line 302, in dlimport
+    rval = __import__(module_name, {}, {}, [module_name])
+ImportError: numpy.core.multiarray failed to import
+
+
+======================================================================
+ERROR: test_vectorized_ngsim_env (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_vectorized_ngsim_env
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 306, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 317, in <module>
+    from cutils_ext.cutils_ext import *  # noqa
+ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/raunakbh/ngsim_env/python/tests/test_vectorized_ngsim_env.py", line 9, in <module>
+    from sandbox.rocky.tf.algos.trpo import TRPO
+  File "/home/raunakbh/rllab/sandbox/rocky/tf/algos/trpo.py", line 3, in <module>
+    from sandbox.rocky.tf.algos.npo import NPO
+  File "/home/raunakbh/rllab/sandbox/rocky/tf/algos/npo.py", line 8, in <module>
+    from sandbox.rocky.tf.algos.batch_polopt import BatchPolopt
+  File "/home/raunakbh/rllab/sandbox/rocky/tf/algos/batch_polopt.py", line 6, in <module>
+    from sandbox.rocky.tf.samplers.batch_sampler import BatchSampler
+  File "/home/raunakbh/rllab/sandbox/rocky/tf/samplers/batch_sampler.py", line 1, in <module>
+    from rllab.sampler.base import BaseSampler
+  File "/home/raunakbh/rllab/rllab/sampler/base.py", line 4, in <module>
+    from rllab.misc import special
+  File "/home/raunakbh/rllab/rllab/misc/special.py", line 4, in <module>
+    import theano.tensor.nnet
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/__init__.py", line 83, in <module>
+    from theano.scan_module import scan, map, reduce, foldl, foldr, clone
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/scan_module/__init__.py", line 41, in <module>
+    from theano.scan_module import scan_opt
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/scan_module/scan_opt.py", line 59, in <module>
+    from theano import tensor, scalar
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/tensor/__init__.py", line 9, in <module>
+    from theano.tensor.subtensor import *
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/tensor/subtensor.py", line 28, in <module>
+    import theano.gof.cutils  # needed to import cutils_ext
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 320, in <module>
+    compile_cutils()
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cutils.py", line 285, in compile_cutils
+    preargs=args)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cmodule.py", line 2291, in compile_str
+    return dlimport(lib_filename)
+  File "/home/raunakbh/miniconda3/envs/rllab3/lib/python3.5/site-packages/theano/gof/cmodule.py", line 302, in dlimport
+    rval = __import__(module_name, {}, {}, [module_name])
+ImportError: numpy.core.multiarray failed to import
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (errors=4)
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ conda install nomkl numpy scipy scikit-learn numexpr
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/raunakbh/miniconda3/envs/rllab3
+
+  added / updated specs: 
+    - nomkl
+    - numexpr
+    - numpy
+    - scikit-learn
+    - scipy
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    numexpr-2.6.4              |py35_nomklh55d25e0_0         182 KB
+    scipy-1.0.0                |py35_nomklhb72a26a_0        17.8 MB
+    scikit-learn-0.19.1        |py35_nomklh26d41a3_0         5.2 MB
+    ------------------------------------------------------------
+                                           Total:        23.1 MB
+
+The following NEW packages will be INSTALLED:
+
+    libopenblas:  0.2.20-h9ac9557_4         
+    nomkl:        1.0-0                     
+    numexpr:      2.6.4-py35_nomklh55d25e0_0 [nomkl]
+
+The following packages will be UPDATED:
+
+    scikit-learn: 0.19.1-py35hbf1f462_0      --> 0.19.1-py35_nomklh26d41a3_0 [nomkl]
+    scipy:        1.0.0-py35hcbbe4a2_0       --> 1.0.0-py35_nomklhb72a26a_0  [nomkl]
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+numexpr 2.6.4: #################################################################### | 100% 
+scipy 1.0.0: ###################################################################### | 100% 
+scikit-learn 0.19.1: ############################################################## | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ python runtests.py 
+test_julia_env (test_julia_env.TestJuliaEnv) ... WARNING: imported binding for Iterators overwritten in module Main
+WARNING: No working GUI backend found for matplotlib
+WARNING: Method definition reset(AutoEnvs.Env) in module AutoEnvs at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:17 overwritten at /home/raunakbh/ngsim_env/julia/AutoEnvs/env.jl:18.
+ok
+test_multiagent_ngsim_env (test_multiagent_ngsim_env.TestMultiagentNGSIMEnv) ... 2018-01-26 10:31:36.010675: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-01-26 10:31:36.078256 PST | itr #0 | Obtaining samples...
+2018-01-26 10:31:36.078588 PST | itr #0 | Obtaining samples for iteration 0...
+0% [##############################] 100% | ETA: 00:00:00
+Total time elapsed: 00:00:03
+2018-01-26 10:31:41.427602 PST | itr #0 | Processing samples...
+2018-01-26 10:31:41.429198 PST | itr #0 | fitting baseline...
+2018-01-26 10:31:41.429427 PST | itr #0 | fitted
+2018-01-26 10:31:41.429781 PST | itr #0 | Logging diagnostics...
+2018-01-26 10:31:41.430107 PST | itr #0 | Optimizing policy...
+2018-01-26 10:31:41.430364 PST | itr #0 | Computing loss before
+2018-01-26 10:31:41.446837 PST | itr #0 | Computing KL before
+2018-01-26 10:31:41.471134 PST | itr #0 | Optimizing
+2018-01-26 10:31:41.479258 PST | itr #0 | Start CG optimization: #parameters: 6404, #inputs: 1000, #subsample_inputs: 1000
+2018-01-26 10:31:41.479506 PST | itr #0 | computing loss before
+2018-01-26 10:31:41.481800 PST | itr #0 | performing update
+2018-01-26 10:31:41.482022 PST | itr #0 | computing gradient
+2018-01-26 10:31:41.524724 PST | itr #0 | gradient computed
+2018-01-26 10:31:41.525020 PST | itr #0 | computing descent direction
+2018-01-26 10:31:42.466616 PST | itr #0 | descent direction computed
+2018-01-26 10:31:42.572876 PST | itr #0 | Line search condition violated. Rejecting the step!
+2018-01-26 10:31:42.573362 PST | itr #0 | Violated because loss is NaN
+2018-01-26 10:31:42.573724 PST | itr #0 | Violated because constraint mean_kl is NaN
+2018-01-26 10:31:42.576164 PST | itr #0 | backtrack iters: 14
+2018-01-26 10:31:42.576578 PST | itr #0 | computing loss after
+2018-01-26 10:31:42.576925 PST | itr #0 | optimization finished
+2018-01-26 10:31:42.577267 PST | itr #0 | Computing KL after
+2018-01-26 10:31:42.579298 PST | itr #0 | Computing loss after
+2018-01-26 10:31:42.581361 PST | itr #0 | Saving snapshot...
+2018-01-26 10:31:42.581754 PST | itr #0 | Saved
+2018-01-26 10:31:42.583598 PST | -----------------------  ------------
+2018-01-26 10:31:42.583973 PST | PolicyExecTime            0.138095
+2018-01-26 10:31:42.584299 PST | EnvExecTime               2.97797
+2018-01-26 10:31:42.584616 PST | ProcessExecTime           0.0259378
+2018-01-26 10:31:42.584928 PST | Iteration                 0
+2018-01-26 10:31:42.585238 PST | AverageDiscountedReturn   0
+2018-01-26 10:31:42.585549 PST | AverageReturn             0
+2018-01-26 10:31:42.585857 PST | ExplainedVariance         1
+2018-01-26 10:31:42.586166 PST | NumTrajs                  5
+2018-01-26 10:31:42.586474 PST | Entropy                   2.25305
+2018-01-26 10:31:42.586795 PST | Perplexity                9.51674
+2018-01-26 10:31:42.587107 PST | StdReturn                 0
+2018-01-26 10:31:42.587416 PST | MaxReturn                 0
+2018-01-26 10:31:42.587722 PST | MinReturn                 0
+2018-01-26 10:31:42.588028 PST | AveragePolicyStd          0.890499
+2018-01-26 10:31:42.588334 PST | LossBefore               -0
+2018-01-26 10:31:42.588640 PST | LossAfter                -0
+2018-01-26 10:31:42.588945 PST | MeanKLBefore             -2.44938e-10
+2018-01-26 10:31:42.589251 PST | MeanKL                   -2.44938e-10
+2018-01-26 10:31:42.589557 PST | dLoss                     0
+2018-01-26 10:31:42.589864 PST | Time                      6.50392
+2018-01-26 10:31:42.590171 PST | ItrTime                   6.50393
+2018-01-26 10:31:42.590478 PST | -----------------------  ------------
+ok
+test_ngsim_env (test_ngsim_env.TestNGSIMEnv) ... ok
+test_vectorized_ngsim_env (test_vectorized_ngsim_env.TestVectorizedNGSIMEnv) ... 2018-01-26 10:31:53.398141 PST | itr #0 | Obtaining samples...
+2018-01-26 10:31:53.398437 PST | itr #0 | Obtaining samples for iteration 0...
+0% [##############################] 100% | ETA: 00:00:00
+Total time elapsed: 00:00:21
+2018-01-26 10:32:15.012202 PST | itr #0 | Processing samples...
+2018-01-26 10:32:15.207216 PST | itr #0 | fitting baseline...
+2018-01-26 10:32:15.536020 PST | itr #0 | trying penalty=1.000...
+2018-01-26 10:32:16.248906 PST | itr #0 | penalty 1.000000 => loss 0.675214, constraint 0.156623
+2018-01-26 10:32:16.249524 PST | itr #0 | trying penalty=2.000...
+2018-01-26 10:32:17.032263 PST | itr #0 | penalty 2.000000 => loss 0.821443, constraint 0.048538
+2018-01-26 10:32:17.032886 PST | itr #0 | trying penalty=4.000...
+2018-01-26 10:32:17.463647 PST | itr #0 | penalty 4.000000 => loss 0.914761, constraint 0.013888
+2018-01-26 10:32:17.464118 PST | itr #0 | trying penalty=8.000...
+2018-01-26 10:32:17.891583 PST | itr #0 | penalty 8.000000 => loss 0.969141, constraint 0.003753
+2018-01-26 10:32:17.922490 PST | itr #0 | fitted
+2018-01-26 10:32:17.923825 PST | itr #0 | Logging diagnostics...
+2018-01-26 10:32:17.925457 PST | itr #0 | Optimizing policy...
+2018-01-26 10:32:17.925673 PST | itr #0 | Computing loss before
+2018-01-26 10:32:17.951982 PST | itr #0 | Computing KL before
+2018-01-26 10:32:17.973678 PST | itr #0 | Optimizing
+2018-01-26 10:32:17.983756 PST | itr #0 | Start CG optimization: #parameters: 6404, #inputs: 10106, #subsample_inputs: 10106
+2018-01-26 10:32:17.984024 PST | itr #0 | computing loss before
+2018-01-26 10:32:17.988938 PST | itr #0 | performing update
+2018-01-26 10:32:17.989198 PST | itr #0 | computing gradient
+2018-01-26 10:32:18.045386 PST | itr #0 | gradient computed
+2018-01-26 10:32:18.045700 PST | itr #0 | computing descent direction
+2018-01-26 10:32:19.352675 PST | itr #0 | descent direction computed
+2018-01-26 10:32:19.478675 PST | itr #0 | backtrack iters: 0
+2018-01-26 10:32:19.478978 PST | itr #0 | computing loss after
+2018-01-26 10:32:19.479135 PST | itr #0 | optimization finished
+2018-01-26 10:32:19.479294 PST | itr #0 | Computing KL after
+2018-01-26 10:32:19.483291 PST | itr #0 | Computing loss after
+2018-01-26 10:32:19.487926 PST | itr #0 | Saving snapshot...
+2018-01-26 10:32:19.488173 PST | itr #0 | Saved
+2018-01-26 10:32:19.489165 PST | -----------------------  -------------
+2018-01-26 10:32:19.489342 PST | PolicyExecTime             0.113372
+2018-01-26 10:32:19.489496 PST | EnvExecTime               20.9027
+2018-01-26 10:32:19.489644 PST | ProcessExecTime            0.200747
+2018-01-26 10:32:19.489789 PST | vf_LossBefore              1.03049
+2018-01-26 10:32:19.489935 PST | vf_LossAfter               0.969141
+2018-01-26 10:32:19.490081 PST | vf_MeanKL                  0.00375339
+2018-01-26 10:32:19.490226 PST | vf_dLoss                   0.0613534
+2018-01-26 10:32:19.490371 PST | Iteration                  0
+2018-01-26 10:32:19.490515 PST | AverageDiscountedReturn    0
+2018-01-26 10:32:19.490673 PST | AverageReturn              0
+2018-01-26 10:32:19.490820 PST | ExplainedVariance          0
+2018-01-26 10:32:19.490965 PST | NumTrajs                 372
+2018-01-26 10:32:19.491109 PST | Entropy                    3.25278
+2018-01-26 10:32:19.491252 PST | Perplexity                25.8622
+2018-01-26 10:32:19.491404 PST | StdReturn                  0
+2018-01-26 10:32:19.491547 PST | MaxReturn                  0
+2018-01-26 10:32:19.491691 PST | MinReturn                  0
+2018-01-26 10:32:19.491835 PST | AveragePolicyStd           1.51911
+2018-01-26 10:32:19.491979 PST | LossBefore                -5.70921e-09
+2018-01-26 10:32:19.492123 PST | LossAfter                 -0.0503772
+2018-01-26 10:32:19.492266 PST | MeanKLBefore               5.52932e-12
+2018-01-26 10:32:19.492410 PST | MeanKL                     0.009923
+2018-01-26 10:32:19.492552 PST | dLoss                      0.0503772
+2018-01-26 10:32:19.492696 PST | Time                      26.0902
+2018-01-26 10:32:19.492840 PST | ItrTime                   26.0902
+2018-01-26 10:32:19.492982 PST | -----------------------  -------------
+ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 73.824s
+
+OK
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ emacs test
+
+[2]+  Stopped                 emacs test
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ ls
+__pycache__  test_julia_env.py             test_ngsim_env.py
+runtests.py  test_multiagent_ngsim_env.py  test_vectorized_ngsim_env.py
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+(rllab3) raunakbh@tver:~/ngsim_env/python/tests$ 
+
