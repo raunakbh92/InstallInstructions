@@ -168,6 +168,3 @@ cd imitation
 python imitate.py [options here]
 ```
 See installation ![logFile](logFiles/installLog_hgail)
-
-# Demo of single agent GAIL in single agent testing
-[demo](example_gail_for_single_validation_exp3_params.mp4)
