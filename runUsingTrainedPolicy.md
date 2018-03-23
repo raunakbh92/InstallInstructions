@@ -7,7 +7,9 @@ are written with that in mind. So for your own case, please accordingly navigate
 cd ~/nsgim_env
 git pull
 
-# Create the directories where the policies will be kept
+# If you have not already, create the directories where the policies will be kept
+# If you already have these directories setup and random_model_name as the experiment name already setup
+# please navigate a few steps ahead to the instructions for creating a directory called media
 mkdir data/
 mkdir data/experiments
 
@@ -22,7 +24,7 @@ mkdir data/experiments/random_model_name/imitate/log
 cd data/experiments/random_model_name/imitate/log/
 # Then copy the policy files into this directory. These are args.npz, iter_200.npz, log.txt
 
-# Now create the directory where the resulting video generated using the trained policy will be written to
+# Now create the media directory where the resulting video generated using the trained policy will be written to
 mkdir ~/ngsim_env/data/media
 
 # revert a breaking change to the Vec.jl dependency by going into the julia packages directory
@@ -45,7 +47,8 @@ cd ~/ngsim_env/scripts/imitation
 sudo apt-get -y install ipython ipython-notebook
 sudo -H pip install jupyter
 
-# Now open up a jupyter notebook
+# Now activate the rllab environment and open up a jupyter notebook
+source activate rllab3
 jupyter notebook
 
 # This will open up a notebook on your browser and you will see all the files present in the
