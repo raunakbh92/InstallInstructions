@@ -9,7 +9,7 @@ git pull
 
 # If you have not already, create the directories where the policies will be kept
 # If you already have these directories setup and random_model_name as the experiment name already setup
-# please navigate a few steps ahead to the instructions for creating a directory called media
+# please navigate ahead to the instructions for creating a directory called media and continue from there
 mkdir data/
 mkdir data/experiments
 
@@ -24,7 +24,7 @@ mkdir data/experiments/random_model_name/imitate/log
 cd data/experiments/random_model_name/imitate/log/
 # Then copy the policy files into this directory. These are args.npz, iter_200.npz, log.txt
 
-# Now create the media directory where the resulting video generated using the trained policy will be written to
+# Now create the media directory where the resulting video will be generated
 mkdir ~/ngsim_env/data/media
 
 # revert a breaking change to the Vec.jl dependency by going into the julia packages directory
