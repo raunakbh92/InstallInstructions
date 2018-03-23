@@ -93,4 +93,4 @@ rm PyCall.jl
 cd ~/ngsim_env/scripts/imitation
 ```
 
-This file was created to facilitate code delivery to Ford after the conclusion of the project.
+These instructions were written by Raunak on 23 March, 2018 to facilitate code delivery to Ford after the conclusion of the project.
