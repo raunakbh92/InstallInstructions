@@ -39,7 +39,6 @@ conda install mkl-service
 conda install mkl=2017
 sudo apt-get install ffmpeg
 
-
 # Now we are ready to run the policy
 cd ~/ngsim_env/scripts/imitation
 # This assumes you have jupyter notebook installed. If not, install it using
@@ -93,4 +92,4 @@ rm PyCall.jl
 cd ~/ngsim_env/scripts/imitation
 ```
 
-These instructions were written by Raunak on 23 March, 2018 to facilitate code delivery to Ford after the conclusion of the project.
+These instructions were written by Raunak on 23 March, 2018 to facilitate code delivery to Ashley and Vidya, our techincal monitors at Ford.
