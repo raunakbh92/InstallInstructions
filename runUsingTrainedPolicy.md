@@ -37,6 +37,7 @@ pip install absl-py
 pip install contexttimer
 pip install theano
 pip install pyprind
+pip install tensorflow
 conda install mkl-service
 conda install mkl=2017
 sudo apt-get install ffmpeg
