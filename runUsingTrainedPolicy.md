@@ -33,6 +33,7 @@ git checkout v0.1.0
 
 # Now install some things (see errors section below to know the specific errors these address)
 cd ~/ngsim_env
+source activate rllab3
 pip install absl-py
 pip install contexttimer
 pip install theano
