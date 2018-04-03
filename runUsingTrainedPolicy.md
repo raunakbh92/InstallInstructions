@@ -50,7 +50,6 @@ sudo apt-get -y install ipython ipython-notebook
 sudo -H pip install jupyter
 
 # Now activate the rllab environment and open up a jupyter notebook
-source activate rllab3
 jupyter notebook
 
 # This will open up a notebook on your browser and you will see all the files present in the
@@ -70,31 +69,74 @@ mkdir /tmp/imitate/viz
 ```
 
 ## Errors Raunak found and their associated fixes
+- absl
 ```bash
 ImportError: No module named 'absl'
 (rllab3) raunak@bombay:~/ngsim_env/scripts/imitation$ pip install absl-py
-
+```
+- contexttimer
+```bash
 ImportError: No module named 'contexttimer'
 (rllab3) raunak@bombay:~/ngsim_env/scripts/imitation$ pip install contexttimer
+```
 
+- theano
+```bash
 ImportError: No module named 'theano'
 (rllab3) raunak@bombay:~/ngsim_env/scripts/imitation$ pip install theano
+```
 
+- pyprind
+```bash
 ImportError: No module named 'pyprind'
 (rllab3) raunak@bombay:~/ngsim_env/scripts/imitation$ pip install pyprind
+```
 
+- No module named 'mkl'
+```bash
 WARNING (theano.configdefaults): install mkl with `conda install mkl-service`: No module named 'mkl'
 Segmentation fault (core dumped)
 (rllab3) raunak@bombay:~/ngsim_env/scripts/imitation$ conda install mkl-service
+```
 
+- "MKL_THREADING_LAYER=GNU"
+```bash
 RuntimeError: To use MKL 2018 with Theano you MUST set "MKL_THREADING_LAYER=GNU" in your environement.
 (rllab3) raunak@bombay:~/ngsim_env/scripts/imitation$ conda install mkl=2017
+```
 
+- Seg fault
+```bash
 signal (11): Segmentation fault
 while loading no file, in expression starting on line 0
 cd ~/.julia/lib/v0.6
 rm PyCall.jl
 cd ~/ngsim_env/scripts/imitation
 ```
+- Jupyter kernel dying
+```bash
+cd ~/.julia/lib/v0.6
+rm PyCall.jl
+cd ~/ngsim_env/scripts/imitation
+```
+- No module named 'julia'
+```bash
+source activate rllab3
+cd ~/ngsim_env/python
+pip install julia
+```
+- No module named 'julia_env'
+```bash
+source activate rllab3
+cd ~/rllab
+python setup.py develop
+ 
+cd ~/ngsim_env/python
+python setup.py develop
+ 
+cd ~/hgail
+python setup.py develop
+```
 
-These instructions were written by Raunak on 23 March, 2018 to facilitate code delivery to Ashley and Vidya, our techincal monitors at Ford.
+These instructions were written by Raunak on 23 March, 2018 to facilitate code delivery to Ashley and Vidya, our technical monitors at Ford.
+Edited on 2 April after succesfully running on Ford machines.
